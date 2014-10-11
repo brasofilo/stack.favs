@@ -240,7 +240,7 @@ function getAPI( page ) {
     });
 }
 
-getAPI( get_page );
+//getAPI( get_page );
 
 var site_page = 1;
 var site_items = [];
@@ -265,7 +265,20 @@ function makeDropdown( page ) {
     });
 }
 
-makeDropdown( site_page );
+//makeDropdown( site_page );
+
+$.ajax({
+
+    url: 'https://www.googleapis.com/moderator/v1/series?key='+key,
+    data: myData,
+    type: 'GET',
+    crossDomain: true,
+    dataType: 'jsonp',
+    success: function() { alert("Success"); },
+    error: function() { alert('Failed!'); },
+    beforeSend: setHeader
+});
+
 
 function renderElement(ajaxResponse) {
 

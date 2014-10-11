@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Testing SE API</title>
+    <style>
+    body {
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+<body>
+<div id="my-container"></div>
+<script>
+var site_page = 1;
+var site_items = [];
+function load_script(src) {
+   var scrip = document.createElement('script');
+   scrip.src = src;
+   document.getElementsByTagName('head')[0].appendChild(scrip);
+   return scrip; //just for the heck of it
+}
+function soResponse(obj) {
+   alert(obj.users[0].reputation);
+}
+
+load_script('http://api.stackoverflow.com/1.0/users/401025/?jsonp=soResponse');
+
+</script>
+
+</body>
+</html>
+
