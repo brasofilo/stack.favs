@@ -252,16 +252,16 @@ function makeDropdown( page ) {
             //console.log(key,val);
             site_items.push( "<option name='" + val.api_site_parameter + "'>" + val.name + "</option>" );
         });
-        if(data.has_more) {
-            site_page++;
-            makeDropdown(site_page);
-        } else {
-            console.log(site_items.join( "" ));
+        //if(data.has_more) {
+        //    site_page++;
+        //    makeDropdown(site_page);
+        //} else {
+        //    console.log(site_items.join( "" ));
             $( "<select/>", {
                 "class": "my-new-select",
                 html: site_items.join( "" )
             }).appendTo( "#my-container" );
-        }
+            //}
  
     });
 }
