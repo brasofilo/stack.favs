@@ -220,7 +220,7 @@ var items = [];
 function getAPI( page ) {
     var uri = "http://api.stackexchange.com/2.2/users/1287812/favorites?page=" 
         + page 
-        + "&pagesize=100&order=desc&sort=added&site=stackoverflow&callback=test";
+        + "&pagesize=100&order=desc&sort=added&site=stackoverflow";
         
     $.getJSON( uri , function( data ) {
         $.each( data.items, function( key, val ) {
@@ -240,7 +240,7 @@ function getAPI( page ) {
     });
 }
 
-//getAPI( get_page );
+getAPI( get_page );
 
 var site_page = 1;
 var site_items = [];
@@ -265,19 +265,7 @@ function makeDropdown( page ) {
     });
 }
 
-//makeDropdown( site_page );
-
-$.ajax({
-
-    url: 'https://www.googleapis.com/moderator/v1/series?key='+key,
-    data: myData,
-    type: 'GET',
-    crossDomain: true,
-    dataType: 'jsonp',
-    success: function() { alert("Success"); },
-    error: function() { alert('Failed!'); },
-    beforeSend: setHeader
-});
+makeDropdown( site_page );
 
 
 function renderElement(ajaxResponse) {
