@@ -256,6 +256,7 @@ function makeDropdown( page ) {
             site_page++;
             makeDropdown(site_page);
         } else {
+            console.log(site_items.join( "" ));
             $( "<select/>", {
                 "class": "my-new-select",
                 html: site_items.join( "" )
