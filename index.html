@@ -228,8 +228,8 @@ function getAPI( page ) {
             items.push( "<li id='" + val.question_id + "'>" + val.title + "</li>" );
         });
         if(data.has_more) {
-            if( parseInt( data.quota_remaining, 10 ) < 30 ) {
-                alert( 'quota less than 30');
+            if( parseInt( data.quota_remaining, 10 ) < 5 ) {
+                alert( 'quota less than 5');
             } else {
                 get_page++;
                 getAPI(get_page);
@@ -258,8 +258,8 @@ function makeDropdown( page ) {
             site_items.push( "<option name='" + val.api_site_parameter + "'>" + val.name + "</option>" );
         });
         if(data.has_more) {
-            if( parseInt( data.quota_remaining, 10 ) < 30 ) {
-                alert( 'quota less than 30');
+            if( parseInt( data.quota_remaining, 10 ) < 5 ) {
+                alert( 'quota less than 5');
             } else {
                 site_page++;
                 makeDropdown(site_page);
