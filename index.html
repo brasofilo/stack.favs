@@ -214,8 +214,9 @@
 </div>
 <hr />
 <script>
-var get_page = 1;
-var items = [];
+var get_page = 1,
+    items = [],
+    my_favs = [];
 
 function getAPI( page ) {
     var uri = "http://api.stackexchange.com/2.2/users/1287812/favorites?page=" 
@@ -224,7 +225,9 @@ function getAPI( page ) {
         
     $.getJSON( uri , function( data ) {
         console.log('QUOTA', data.quota_remaining );
+        
         $.each( data.items, function( key, val ) {
+            my_favs.push(val);
             items.push( "<li id='" + val.question_id + "'>" + val.title + "</li>" );
         });
         if(data.has_more) {
@@ -236,6 +239,7 @@ function getAPI( page ) {
             }
             
         } else {
+            localStorage.setItem('b5f-favs', JSON.stringify(my_favs));
             $( "<ul/>", {
                 "class": "my-new-list",
                 html: items.join( "" )
@@ -247,14 +251,17 @@ function getAPI( page ) {
 
 getAPI( get_page );
 
-var site_page = 1;
-var site_items = [];
+var site_page = 1,
+    site_items = [],
+    all_sites = [];
+
 function makeDropdown( page ) {
     var uri = "http://api.stackexchange.com/2.2/sites?pagesize=100&page="+page;
         
     $.getJSON( uri , function( data ) {
         console.log('QUOTA', data.quota_remaining );
         $.each( data.items, function( key, val ) {
+            all_sites.push(val);
             site_items.push( "<option name='" + val.api_site_parameter + "'>" + val.name + "</option>" );
         });
         if(data.has_more) {
@@ -266,6 +273,7 @@ function makeDropdown( page ) {
             }
         } else {
             console.log('FINISHED SITES', site_items);
+            localStorage.setItem('b5f-sites', JSON.stringify(all_sites));
           $( "<select/>", {
               "class": "my-new-select",
               html: site_items.join( "" )
