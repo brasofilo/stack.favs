@@ -223,8 +223,8 @@ function getAPI( page ) {
         + "&pagesize=100&order=desc&sort=added&site=stackoverflow";
         
     $.getJSON( uri , function( data ) {
+        console.log('QUOTA', data.quota_remaining );
         $.each( data.items, function( key, val ) {
-            //console.log(key,val);
             items.push( "<li id='" + val.question_id + "'>" + val.title + "</li>" );
         });
         if(data.has_more) {
@@ -253,8 +253,8 @@ function makeDropdown( page ) {
     var uri = "http://api.stackexchange.com/2.2/sites?pagesize=100&page="+page;
         
     $.getJSON( uri , function( data ) {
+        console.log('QUOTA', data.quota_remaining );
         $.each( data.items, function( key, val ) {
-            //console.log(key,val);
             site_items.push( "<option name='" + val.api_site_parameter + "'>" + val.name + "</option>" );
         });
         if(data.has_more) {
