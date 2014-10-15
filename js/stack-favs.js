@@ -68,7 +68,7 @@ $( function() {
     }
 
     function makeFlair( user, site, account, unicode ) {
-        unicode = true;
+        unicode = false;
         if( !unicode ) {
             var iframe = '<iframe id="myIframe" width="210" height="58" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="$ifSource">asdf</iframe>',
                 se_url   = 'http://stackexchange.com/users/$account',
