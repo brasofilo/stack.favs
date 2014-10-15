@@ -68,7 +68,7 @@ $( function() {
     }
 
     function makeFlair( user, site, account, unicode ) {
-        unicode = false;
+        unicode = false; // http://stackapps.com/questions/2119/#comment11865_2119
         if( !unicode ) {
             var iframe = '<iframe id="myIframe" width="210" height="58" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="$ifSource">asdf</iframe>',
                 se_url   = 'http://stackexchange.com/users/$account',
@@ -286,7 +286,7 @@ $( function() {
                 .replace( '{title}', val.title )
                 .replace( /{answerCount}/g, val.answer_count )
                 .replace( /{score}/g, val.score )
-                .replace( /{viewCount}/, val.view_count )
+                .replace( /{viewCount}/g, val.view_count )
                 .replace( '{timestamp}', val.last_activity_date )
                 .replace( '{date}', timeConverter(val.last_activity_date) )
                 .replace( '{tagList}', val.tags.join('</span> <span class="tags">') )
