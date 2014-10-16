@@ -352,10 +352,7 @@ $( function() {
                 view_count: function( $elem ) {
                     var num_val = $($elem).find('.view_count').data('views');
                     return parseInt( num_val, 10);
-                },
-                category: function ( $elem ) {
-                    return $elem.attr('data-category');
-                  }
+                }
             },
             masonry: {
                 columnWidth: 110
