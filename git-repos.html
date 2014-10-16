@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Stack Echange Favorites</title>
+    <title>Testing Github + Isotope</title>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js'></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.0.0/isotope.pkgd.min.js'></script>
     <script src='http://isotope.metafizzy.co/beta/bower_components/isotope-cells-by-column/cells-by-column.js'></script>
@@ -19,29 +19,15 @@
     <!-- user's button menu -->
     <ul class='context-menu'>
         <li data-action="refresh">Update cache</li>
-        <li data-action="goto">Visit profile</li>
         <li data-action="del">Delete</li>
     </ul>
     
-    <h1>SE favorites <sup><sub><a href="/git-repos.html" style="margin-left: 20px; font-size:.5em; font-weight: bold">Starred Git repos</a></sub></sup></h1>
+    <h1>Github Starred <sup><sub><a href="/" style="margin-left: 20px; font-size:.5em; font-weight: bold">Stack Favorites</a></sub></sup></h1>
     <div id="select-site-user">
-        <!-- Meta button -->
-        <span class='select-inputs'>
-            <label id="sliderLabel"> 
-                <input type="checkbox" id="super-meta-site" /> 
-                <span id="slider"> 
-                    <span id="sliderOn">ON</span> 
-                    <span id="sliderOff">Meta</span> 
-                    <span id="sliderBlock"></span> 
-                </span> 
-            </label>
-        </span>
         <!-- User ID -->
-        <span class='select-inputs'><input type="text" id="user-id" placeholder="User ID" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></span>
+        <span class='select-inputs'><input type="text" id="user-id" placeholder="User Name"></span>
         <!-- Submit -->
         <span class='select-inputss'><button id="send-request">Get it</button></span>
-        <!-- Flair -->
-        <span class="select-inputs flair"></span>
         <!-- Stored users -->
         <div class="select-inputs stored dotted"></div>
     </div>
@@ -49,16 +35,18 @@
     <h2>Sorting</h2>
     <div id="sorts" class="button-group">
       <button class="iso-button is-checked" data-sort-value="original-order">original order</button>
-      <button class="iso-button" title="click again to reverse" data-sort-value="answer_count">answer_count</button>
-      <button class="iso-button" title="click again to reverse" data-sort-value="score">score</button>
-      <button class="iso-button" title="click again to reverse" data-sort-value="view_count">view_count</button>
-      <button class="iso-button" title="click again to reverse" data-sort-value="last_activity_date">last_activity_date</button>
+      <button class="iso-button" title="click again to reverse" data-sort-value="forks_count">forks count</button>
+      <button class="iso-button" title="click again to reverse" data-sort-value="starred">starred</button>
+      <button class="iso-button" title="click again to reverse" data-sort-value="last_activity_date">activity</button>
     </div>
 
     <!-- Receives the value of the current shown items -->
     <h2 id="filter-h2">Filter &amp; Tags</h2>
     <div id="filters" class="button-group">  
         <button class="iso-button is-checked" data-filter="*">show all</button>
+        <button class="iso-button" data-filter="PHP">PHP</button>
+        <button class="iso-button" data-filter="CSS">CSS</button>
+        <button class="iso-button" data-filter="JavaScript">JavaScript</button>
     </div>
 
     <!-- Isotope -->
@@ -74,7 +62,7 @@
             and lots of stackoverflowing.... oh, and jQuery :)
         </span>
     </footer>
-    <script src='js/stack-favs.js'></script>
+    <script src='js/git-starred.js'></script>
 </body>
 </html>
 

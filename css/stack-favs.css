@@ -120,13 +120,14 @@ body {
 .rainbowed > *:nth-child(10n+6) { background-color: #25C3E1; }
 .rainbowed > *:nth-child(10n+7) { background-color: #D5CBFB; }
 .rainbowed > *:nth-child(10n+8) { background: hsl( 288, 100%, 50%); }
-.rainbowed > *:nth-child(10n+9) { background; }
+.rainbowed > *:nth-child(10n+9) { background-color: #019ad2; }
 p.tags {
     line-height: 1.6em;
     width: 100%;
     position: absolute;
     margin-top: .8em;
     /*  
+    cursor: default;
     word-break: break-all;
     box-sizing: border-box;
     -moz-box-sizing: border-box; */
@@ -137,6 +138,15 @@ h3.title {
     border-bottom: 2px solid rgba(180,180,180,.2);
     font-size: 1em;
 }
+/* Git specific */
+.git-description {
+    border-bottom: 2px solid rgba(180,180,180,.2);
+    margin-bottom: 10px;
+}
+p.starred {
+    margin-top: 2.5em;
+}
+/* END Git */
 span.tags {
     background-color: #E6F1FF;
     color: #6F6F6F;
@@ -277,9 +287,9 @@ a.goto-user {
     background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
     background-color:#ffffff;
-    -moz-border-radius:6px;
-    -webkit-border-radius:6px;
-    border-radius:6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
     border:1px solid #dcdcdc;
     display:inline-block;
     cursor:pointer;
@@ -289,7 +299,7 @@ a.goto-user {
     padding:3px 14px;
     text-decoration:none;
     position:relative;
-    margin-right:5px;
+    margin-left:13px;
     transition: all 0.3s ease;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -300,7 +310,7 @@ a.goto-user {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    min-width: 110px;
+    /*min-width: 110px;*/
     text-align: center;
 }
 a.goto-user span {
@@ -313,9 +323,9 @@ a.goto-user span {
 
 }
 .grow:hover {
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 a.goto-user:hover span {
@@ -369,7 +379,7 @@ a.goto-user span img {
     background-color: #DEF;
 }
 
-.element-item p.answer_count {
+.element-item p.answer_count, .element-item p.forks_count{
     font-size: 3em;
     position: absolute;
     right: 0;

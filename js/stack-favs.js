@@ -24,13 +24,13 @@ $( function() {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
             results = regex.exec(location.search);
-        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
 
     function arrayHasKey(nameKey, nameValue, myArray){
         var found = false;
-        for (var i=0; i < myArray.length; i++) {
-            if (myArray[i][nameKey] == nameValue) {
+        for ( var i=0; i < myArray.length; i++ ) {
+            if ( myArray[i][nameKey] === nameValue ) {
                 found = i;
             }
         }
@@ -95,6 +95,27 @@ $( function() {
     function showVisibleItemsNumber() {
         $('#filter-h2').text('Filter & Tags ' + $('.isotope .element-item:visible').length );
     }
+    
+    /**
+     * Fill ID buttons with spaces so rollover with nick doesn't jump width too much
+     * 
+     * @returns string
+     */
+    function makeIDfullLength( userid, nick ){
+        var uid = userid + '', // convert to string
+            n = nick.length,
+            remain, extend;
+
+       uid = uid.length;
+       if( n < uid )
+            return userid;
+        
+        remain = parseInt( ( (n - uid) / 2 ), 10 ) + 1;
+        extend = Array(remain).join('&nbsp;');
+        return extend + userid + extend;
+        
+    }
+
      // </editor-fold>
    
     // <editor-fold desc="localStorage" defaultstate="collapsed">
@@ -141,6 +162,9 @@ $( function() {
         }
     }
     
+    // </editor-fold>
+    
+    // <editor-fold desc="Build interface" defaultstate="collapsed">
     function resetUI(){
         if( $('.isotope').data('isotope')  ) {
             $('.isotope').isotope('destroy');
@@ -152,9 +176,7 @@ $( function() {
         $('.button-group').hide();
         $('.isotope').html('');
     }
-    // </editor-fold>
     
-    // <editor-fold desc="Build interface" defaultstate="collapsed">
     function makeStoredUsers(site) {
         var get_users, buttons,
             the_site,
@@ -232,7 +254,9 @@ $( function() {
             $('a.goto-user').bind("contextmenu", bindContextMenu);
             $("a.goto-user")
                 .mouseenter(function(){
-                    $('em.nick', this).text( $(this).data('userid') );
+                    var uid = $(this).data('userid'),
+                        nick = $(this).data('nick');
+                    $('em.nick', this).html( makeIDfullLength( uid, nick ) );
                 })
                 .mouseleave(function(){
                     $('em.nick', this).text( $(this).data('nick') );
@@ -240,7 +264,7 @@ $( function() {
         } 
         else $('.select-inputs.stored').html('No stored users.');
     }
-    
+
     function parseFavorites(ls_obj) {
         var favs_items = [], 
             sites_items = [], 
@@ -253,7 +277,7 @@ $( function() {
         }
         
         $.each( ls_obj, function( key, val ) {
-            var construct, safe_tag, safe_tags, construct;
+            var construct, safe_tag, safe_tags;
             $.each(val.tags, function(k,v){
                 var has_tag = arrayHasKey('tag', v, tags_list);
                 if( has_tag === false ) {
@@ -289,18 +313,8 @@ $( function() {
                 .replace( /{viewCount}/g, val.view_count )
                 .replace( '{timestamp}', val.last_activity_date )
                 .replace( '{date}', timeConverter(val.last_activity_date) )
-                .replace( '{tagList}', val.tags.join('</span> <span class="tags">') )
-            /*
-            construct = ''
-                + '    <div class="element-item ' + safe_tags + '" data-category="' + safe_tag + '">'
-                + '        <h3 class="title"><a href="' + val.link + '" target="_blank">' + val.title + '</a></h3>'
-                + '        <p class="answer_count" data-answers="' + val.answer_count + '"><strong title="Answers">' + val.answer_count + '</strong></p>'
-                + '        <p class="score" data-score="' + val.score + '">score: <strong>' + val.score + '</strong></p>'
-                + '        <p class="view_count" data-views="' + val.view_count + '">views: <strong>' + val.view_count + '</strong></p>'
-                + '        <p class="last_activity_date" data-last="' + val.last_activity_date + '">active: <strong>' + timeConverter(val.last_activity_date) + '</strong></p>'
-                + '        <p class="tags"><span class="tags">' + val.tags.join('</span> <span class="tags">') + '</span></p>'
-                + '    </div>';
-            */
+                .replace( '{tagList}', val.tags.join('</span> <span class="tags">') );
+        
             favs_items.push( construct );
         });
         tags_list.sort(sortTags);
@@ -338,7 +352,10 @@ $( function() {
                 view_count: function( $elem ) {
                     var num_val = $($elem).find('.view_count').data('views');
                     return parseInt( num_val, 10);
-                }
+                },
+                category: function ( $elem ) {
+                    return $elem.attr('data-category');
+                  }
             },
             masonry: {
                 columnWidth: 110
