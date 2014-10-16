@@ -170,7 +170,7 @@ $( function() {
                         v.name
                     ],
                     anchors = [
-                        '<a href="{viewFavs}" class="goto-user grow"',
+                        '<a href="{viewFavs}" class="goto-user goto-git grow"',
                         ' data-favcount="{favCount}"',
                         ' data-name="{user}"',
                         ' data-repo="{repoID}">{user}',
@@ -203,7 +203,7 @@ $( function() {
             var construct;
             
             construct = [
-                '<a href="{url}" target="_blank"><div class="element-item" data-filter="{language}">',
+                '<a href="{url}" target="_blank"><div class="element-item" data-category="{language}">',
                 '<h3 class="title-git">{title}</h3><div class="git-description">{description}</div>',
                 '<p class="forks_count" data-forks="{forksCount}"><strong title="Forks">{forksCount}</strong></p>',
                 '<p class="starred" data-starred="{starred}">starred: <strong>{starred}</strong></p>',
