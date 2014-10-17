@@ -1,5 +1,13 @@
+/**
+ * Stack Exchange favorites
+ * version  1.1
+ * author   brasofilo
+ * licence  MIT
+ * homepage http://brasofilo.github.io/stack.favs/
+ * 
+ */
 $( function() {
-    var get_page, $container,my_favs, current_site, $oDD,
+    var get_page, $container,my_favs, current_site, current_user, $oDD,
         get_user_url = getURLParam('user'),
         get_site_url = getURLParam('site');
 ;
@@ -67,8 +75,8 @@ $( function() {
         return false;
     }
 
-    function makeFlair( user, site, account, unicode ) {
-        unicode = false; // http://stackapps.com/questions/2119/#comment11865_2119
+    function makeFlair( user, site, account ) {
+        var unicode = false; // http://stackapps.com/questions/2119/#comment11865_2119
         if( !unicode ) {
             var iframe = '<iframe id="myIframe" width="210" height="58" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="$ifSource">asdf</iframe>',
                 se_url   = 'http://stackexchange.com/users/$account',
@@ -119,45 +127,38 @@ $( function() {
      // </editor-fold>
    
     // <editor-fold desc="localStorage" defaultstate="collapsed">
-    function removeUserStorage( site, user ) {
-        var parsed, has_user,
-            get_ls = localStorage.getItem( site );
-            
-        if( get_ls ) {
-            parsed = JSON.parse( get_ls );
-            has_user = arrayHasKey('user', user, parsed);
-            if( has_user !== false ) {
-                parsed.splice(has_user,1);
-                localStorage.setItem( site, JSON.stringify( parsed ) );
-                makeStoredUsers(site);
-            }
-        }
+    function storageRemoveItem( site, user ) {
+        localStorage.removeItem( 'se.' + site + '.' + user );
+        makeStoredUsers(site); 
     }
     
-    function setStorage( site, user, nick, account ) {
-        var parsed, has_user,
-            get_ls = localStorage.getItem( site );
+    function storageSet( site, user, nick, account ) {
+        localStorage.setItem( 'se.' + site + '.' + user, JSON.stringify( { user:user, favs:my_favs, nick:nick, account:account } ) );    }
+    
+    /**
+     * Get a specific site user
+     * @param string site
+     * @param string user
+     * @returns obj/boolean
+     */
+    function storageGetItem( site, user ) {
+        var ls_site = localStorage.getItem('se.' + site + '.' + user);
+    
+        if( !ls_site ) 
+            return false;
             
-        if( !get_ls ) {
-            localStorage.setItem( site, JSON.stringify( [{ user:user, favs:my_favs, nick:nick, account:account }] ) );
-        } else {
-            parsed = JSON.parse( get_ls );
-            has_user = arrayHasKey('user', user, parsed);
-            if( has_user !== false ) {
-                parsed[has_user] = { user:user, favs:my_favs, nick:nick, account:account };
-            } else {
-                parsed.push({ user:user, favs:my_favs, nick:nick, account:account })
-            }
-            localStorage.setItem( site, JSON.stringify( parsed ) );
-        }
-        
+        return JSON.parse( ls_site );
     }
     
-    function clearCache(e) {
+    function storageRemoveAll(e) {
         e.preventDefault();
-        var site = $(this).data('site');
+        var site = getAllStoredSEsite(); // export.js
         if (window.confirm("Clear all users?")) { 
-            localStorage.removeItem(site);
+            if( site.length !== 0 ) {
+                site.forEach(function(v,k){ 
+                    localStorage.removeItem(v);
+                });
+            }
             makeStoredUsers(site);
         }
     }
@@ -177,49 +178,62 @@ $( function() {
         $('.isotope').html('');
     }
     
+    /**
+     * Clears the box
+     */
+    function resetStoredUsers() {
+        $('.select-inputs.stored').html('No stored users.');
+    }
+    /**
+     * Update current user value
+     * @returns void
+     */
+    function setCurrentUser() {
+        current_user = ($('#user-id').val() === '') ? false : $('#user-id').val();
+    }
+
     function makeStoredUsers(site) {
         var get_users, buttons,
-            the_site,
-            is_meta = $('#super-meta-site').is(':checked'),
+            the_site = site,
+            is_meta,
             get_site_url;
-        
-        if( typeof site === 'string' )
-            the_site = site.replace('meta.','')
-        else {
-            if( $oDD ) {
-                the_site = site.value;
-            }
-            else {
-                the_site = $('#select-site-user .site-select').val();
-            }
-        } 
-        
+    
+        setCurrentUser();
+       
+        is_meta = ( 
+                $('#super-meta-site').is(':checked')  
+                && (site !== 'meta.main' && site.indexOf('meta.') !== 0)
+                && site !== 'stackapps'
+        ); 
         if( is_meta ) {
-            if( $oDD && site.image ) {
-                the_site = site.imagecss;
-            }
-            else {
-                the_site = $('.select-inputs .site-select option[value="'+the_site+'"]').data('meta-api');
-            }
+            the_site = 'meta.' + site;
+            $('h1 .site-logo img').addClass('filter-gray');
+        } 
+        else {
+            $('h1 .site-logo img').removeClass('filter-gray');
         }
-        if( !the_site){ // when clicking on meta checkbox
-            var index = $oDD.get("selectedOptions").data('meta-api');
-            the_site = is_meta ? index : index.replace('meta.','');//sites_arr[index].site_url)
-        }
-        get_users = localStorage.getItem( the_site );
         
-        if( get_users ) {
-            get_site_url = arrayHasKey( 'api_site_parameter', the_site, sites_arr );
-            get_users = JSON.parse( get_users );
-            buttons = 'Stored users @'+the_site+': ';
-            buttons += ' <sub><sup><a id="clear-cache" data-site="'+the_site+'" href="#">clear</a></sup></sub> ';
+        
+        get_site_url = arrayHasKey( 'api_site_parameter', site, sites_arr );
+        if( get_site_url !== false ) {
+            get_site_url = sites_arr[get_site_url].site_url;
+        }
+        
+        get_users = getAllStoredSEsite(the_site);
+        
+        if( get_users && get_users.length > 0) {
+
+            buttons = 'Stored users @' + the_site+': ';
+            buttons += ' <sub><sup><a id="clear-cache" data-site="' + the_site + '" href="#">clear</a></sup></sub> ';
             
             get_users.forEach(function(v,k){
                 var anchor,
+                    user_id = v.replace('se.', '').replace(the_site+'.', ''),
+                    get_ls = storageGetItem( the_site, user_id ),
                     profile = [
-                        sites_arr[get_site_url].site_url,
+                        get_site_url,
                         '/users/',
-                        v.user,
+                        user_id,
                         '?tab=favorites'
                     ],
                     view_favs = [
@@ -228,7 +242,7 @@ $( function() {
                         '?site=',
                         the_site,
                         '&user=',
-                        v.user
+                        user_id
                     ],
                     anchors = [
                         '<a href="{viewFavs}" class="goto-user grow" data-profile="{profile}"',
@@ -242,11 +256,11 @@ $( function() {
                 anchors = anchors.join('')
                     .replace( '{viewFavs}', view_favs.join('') )
                     .replace( '{profile}', profile.join('') )
-                    .replace( /{favCount}/g, v.favs.length )
+                    .replace( /{favCount}/g, get_ls.favs.length )
                     .replace( '{theSite}', the_site )
-                    .replace( /{user}/g, v.user )
-                    .replace( /{nick}/g, v.nick )
-                    .replace( '{sitesList}', sites_arr[get_site_url].site_url );
+                    .replace( /{user}/g, get_ls.user )
+                    .replace( /{nick}/g, get_ls.nick )
+                    .replace( '{sitesList}', get_site_url );
             
                 buttons += anchors;
             });
@@ -262,21 +276,22 @@ $( function() {
                     $('em.nick', this).text( $(this).data('nick') );
                 });
         } 
-        else $('.select-inputs.stored').html('No stored users.');
+        else 
+            resetStoredUsers();
     }
 
-    function parseFavorites(ls_obj) {
+    function parseFavorites( favorites ) {
         var favs_items = [], 
             sites_items = [], 
             tags_list = [], 
             tags_buttons = [];
         
-        if( ls_obj.length === 0 ) {
+        if( favorites.length === 0 ) {
             $('.isotope').html('no favorites');
             return;
         }
         
-        $.each( ls_obj, function( key, val ) {
+        $.each( favorites, function( key, val ) {
             var construct, safe_tag, safe_tags;
             $.each(val.tags, function(k,v){
                 var has_tag = arrayHasKey('tag', v, tags_list);
@@ -376,14 +391,14 @@ $( function() {
         var site_items = ['<option value="default">Select a site</option>'];
         $.each( sites, function( key, val ) 
         {
-            if( val.site_state !== 'linked_meta' ) {
+            if( val.site_type === 'main_site' ) {
                 var meta_api_param = '',
-                    site_url, meta_url, option_html;
+                    meta_url_param = '',
+                    site_url, option_html;
                     
                 val.related_sites.forEach(function(k,v){ 
                     if( k.relation === 'meta' ) {
                         meta_api_param = ' data-meta-api="' + k.api_site_parameter + '"';
-                        meta_api_param += ' data-imagecss="' + k.api_site_parameter + '"'; // for dd-dropdown
                         meta_url_param = ' data-meta-url="' + k.site_url + '"';
                     }
                 });
@@ -391,7 +406,8 @@ $( function() {
                 option_html = '<option value="' + val.api_site_parameter + '"' 
                             + meta_api_param + meta_url_param 
                             + ' data-site-url="' + val.site_url + '"'
-                            + ' data-image="' + val.favicon_url + '"'
+                            + ' data-image="http://cdn.sstatic.net/' + val.favicon_url + '"'
+                            + ' data-imagecss="http://cdn.sstatic.net/' + val.high_resolution_icon_url + '"' // for dd-dropdown
                             + '>' + val.name + '</option>';
                 site_items.push( option_html );
             }
@@ -404,9 +420,38 @@ $( function() {
         
         $('#select-site-user .site-select').wrap('<span class="select-inputs sites-dd"></span>');
         try {
-            $oDD = $('#select-site-user .site-select').msDropdown({on:{change:makeStoredUsers}}).data('dd');
+            $oDD = $('#select-site-user .site-select').msDropdown({on:{change:function(e){
+                        current_site = e.value !== 'default' ? e.value : false;
+                        refreshDropDown( current_site, e.imagecss );
+                    }}}).data('dd');
         } catch(e) {}
-        if( !$oDD ) $('#select-site-user .site-select').change(makeStoredUsers);
+        if( !$oDD ) $('#select-site-user .site-select').change(function(){
+            current_site = $(this).val() !== 'default' ? $(this).val() : false;
+            refreshDropDown( current_site );
+        });
+    }
+    
+    /**
+     * Dropdown listener
+     * 
+     * @param {string} current_site
+     * @returns void
+     */
+    function refreshDropDown( current_site, high_res_icon ) {
+        if( current_site === 'meta.main')
+            $('#select-site-user .select-inputs.meta-cb').hide();
+        else
+            $('#select-site-user .select-inputs.meta-cb').show();
+        setCurrentUser();
+        if( current_site ) {
+            $('h1 .site-logo').html('<img src="'+high_res_icon+'" />');
+            makeStoredUsers(current_site);
+        }
+        else {
+            $('h1 .site-logo').html('<img src="http://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" />');
+            resetStoredUsers();
+        }
+        
     }
     // </editor-fold>
 
@@ -418,17 +463,18 @@ $( function() {
     function getAPIUser( site, user ){
         var account,
             nick = user,
+            get_site = ( site === 'meta.main' ) ? 'meta' : site,
             uri = 'http://api.stackexchange.com/2.2/users/' + user
-                + '?pagesize=1&site=' + site
+                + '?pagesize=1&site=' + get_site
                 + '&key=WfdrC3u7rmAQDwaSRYrw2w((',
             json_call = function(data){
                 if( data.items.length !== 0 ) {
                     nick = data.items[0].display_name;
                     account = data.items[0].account_id;
                 }
-                setStorage( site, user, nick, account );
+                storageSet( site, user, nick, account );
                 parseFavorites(my_favs);
-                makeFlair( user, site, account, isDoubleByte(nick) );
+                makeFlair( user, site, account );
                 makeStoredUsers(site);
             },
             json_error = function(){
@@ -439,9 +485,10 @@ $( function() {
     }
     
     function getAPI( page, site, user ) {
-        var uri = 'http://api.stackexchange.com/2.2/users/' + user
+        var get_site = ( site === 'meta.main' ) ? 'meta' : site,
+            uri = 'http://api.stackexchange.com/2.2/users/' + user
             + '/favorites?page=' + page 
-            + '&pagesize=100&order=desc&sort=added&site=' + site
+            + '&pagesize=100&order=desc&sort=added&site=' + get_site
             + '&key=WfdrC3u7rmAQDwaSRYrw2w((';
 
         $.getJSON( uri , function( data ) 
@@ -471,20 +518,14 @@ $( function() {
         }).error(function() { alert("Bad request, check the user ID."); });
     }
     
-    function requestAPIorLS(site, user) {
-        var has_user,
-            ls_site = localStorage.getItem(site);
-            
-        if( ls_site ) {
-            parsed = JSON.parse(ls_site); 
-            has_user = arrayHasKey( 'user', user, parsed );
-            if( has_user !== false ) {
-                parseFavorites(parsed[has_user].favs);
-                makeStoredUsers(site);
-                makeFlair( parsed[has_user].user, site, parsed[has_user].account, isDoubleByte(parsed[has_user].nick) );
-            }
-            else
-                getAPI( get_page=1, site, user ); 
+    function requestAPIorLS( site, user) {
+        current_user = user;
+        var ls_site_user = storageGetItem( site, user );
+        if( ls_site_user ) {
+            my_favs = ls_site_user.favs;
+            parseFavorites(my_favs);
+            makeStoredUsers(site);
+            makeFlair( ls_site_user.user, site, ls_site_user.account );
         } else {
             getAPI( get_page=1, site, user );
         }
@@ -493,16 +534,18 @@ $( function() {
 
     // <editor-fold desc="Buttons behaviors" defaultstate="collapsed">
     function sendRequestBtn() {
-        var site, parsed,
+        var site,
             meta_api = $( "#select-site-user .site-select option:selected" ).data('meta-api'),
             site_api = $('#select-site-user .site-select').val(),
             user = $('#user-id').val();
-            
+    
+        site = $('#super-meta-site').is(':checked') ? meta_api : site_api;
+        
         if( site_api === 'default' ) alert('Select a site');
         else if( user==='' ) alert('Enter a User ID');
         else {
-            site = $('#super-meta-site').is(':checked') ? meta_api : site_api;
-            if( !site ) {
+            
+            if( !site && site_api !== 'meta.main' ) {
                 alert('This site does not have meta')
                 return;
             }
@@ -513,8 +556,6 @@ $( function() {
     
     function filtersBtn() {
         var filterValue = $( this ).attr('data-filter');
-        // use filterFn if matches value
-//        filterValue = filterFns[ filterValue ] || filterValue;
         $container.isotope({ filter: filterValue });
         setTimeout( showVisibleItemsNumber, 1000 );
     }
@@ -539,13 +580,12 @@ $( function() {
                 left: event.pageX + "px"
             });
         $('span',this).hide();
-        
         // 0:refresh, 1:profile, 2:delete
-        $(".context-menu li:eq(2)").text( 'Delete #'+$(this).data('userid') );
         $(".context-menu li:eq(0), .context-menu li:eq(2)")
                 .attr('api-url', $(this).data('api-url') )
                 .attr('userid', $(this).data('userid') );
         $(".context-menu li:eq(1)").attr('profile', $(this).data('profile') );
+        $(".context-menu li:eq(2)").text( 'Delete #'+$(this).data('userid') );
     }
     
     $("#user-id").keypress(function(event) {
@@ -556,8 +596,10 @@ $( function() {
     });
     
     $('#send-request')      .click(sendRequestBtn);
-    $('#super-meta-site')   .change(makeStoredUsers);
     $('#filters')           .on( 'click', 'button', filtersBtn );
+    $('#super-meta-site')   .change(function(){
+        makeStoredUsers( $('#select-site-user .site-select').val() );
+    });
     
     $('.button-group').each( function( i, buttonGroup ) {
         var $buttonGroup = $( buttonGroup );
@@ -568,7 +610,7 @@ $( function() {
     });
     $('.button-group').hide();
     
-    $(document).on('click', '#clear-cache',clearCache);
+    $(document).on('click', '#clear-cache',storageRemoveAll);
     $(document).on('click', '.select-inputs.stored button.goto-user',function(e){
         e.preventDefault();
         gotoUser( $(this).data('api-url'), $(this).data('userid') );
@@ -582,26 +624,7 @@ $( function() {
     });
     // </editor-fold>
         
-    makeDropdown(sites_arr);
-
-    // <editor-fold desc="ORGANIZE" defaultstate="collapsed">
-    /**
-     * Set values if URL sending params
-     */
-    if( get_user_url && get_site_url ) {
-        $('#user-id').val( parseInt( get_user_url, 10 ) );
-        var index = get_site_url.replace( 'meta.', '' );
-        
-        if( get_site_url.indexOf('meta.') === 0 ) {
-            get_site_url = arrayHasKey( 'api_site_parameter', get_site_url, sites_arr );
-            $('#super-meta-site').prop( 'checked', true );
-        }
-        if($oDD) $oDD.setIndexByValue( index );
-        else $('#select-site-user .site-select').val( index );
-        
-        $('#send-request').click();
-    }
-    
+    // <editor-fold desc="Contextual menu" defaultstate="collapsed">
     /**
      * Right click contextual menu on user buttons
      * http://stackoverflow.com/a/20471268/1287812
@@ -616,20 +639,54 @@ $( function() {
      * Right click contextual menu on user buttons
      */
     $(".context-menu li").click(function(){
+        var url = $(this).attr('api-url'),
+            userid = $(this).attr('userid'),
+            profile = $(this).attr('profile');
+            
         switch( $(this).data("action") ) {
             case "del": 
-                removeUserStorage( $(this).attr('api-url'), $(this).attr('userid') );
+                storageRemoveItem( url, userid );
                 break;
             case "goto": 
-                location.href = $(this).attr('profile'); 
+                location.href = profile; 
                 break;
             case "refresh": 
-                removeUserStorage( $(this).attr('api-url'), $(this).attr('userid') );
-                gotoUser( $(this).attr('api-url'), $(this).attr('userid') );
+                storageRemoveItem( url, userid );
+                gotoUser( url, userid );
                 break;
         }
         $(".context-menu").hide(100);
-    });
+    });    
+    // </editor-fold>
+    
+
+    // <editor-fold desc="Start up" defaultstate="collapsed">
+    makeDropdown(sites_arr);
+
+    /**
+     * Set values if URL sending params
+     */
+    if( get_user_url && get_site_url ) {
+        var userid = parseInt( get_user_url, 10 );
+        $('#user-id').val( userid );
+        current_user = userid;
+        
+        var is_meta_main = ( get_site_url === 'meta.main' ),
+            index = ( is_meta_main ) ? get_site_url : get_site_url.replace( 'meta.', '' );
+        
+        if( get_site_url.indexOf('meta.') === 0 && !is_meta_main ) {
+            get_site_url = arrayHasKey( 'api_site_parameter', get_site_url, sites_arr );
+            $('#super-meta-site').prop( 'checked', true );
+        }
+        if( is_meta_main ) $('#select-site-user .select-inputs.meta-cb').hide();
+        else $('#select-site-user .select-inputs.meta-cb').show();
+        
+        if($oDD) $oDD.setIndexByValue( index );
+        else $('#select-site-user .site-select').val( index );
+        
+        $('#send-request').click();
+    }
+    
     
     /**
      * Just testing some CSS, add ?theme=1 to the URL to see

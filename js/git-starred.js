@@ -4,12 +4,6 @@ $( function() {
 ;
   
     // <editor-fold desc="Utilities" defaultstate="collapsed">
-    if ( !window.log ) {
-        window.log = function log() {
-            for( var i=0; i<arguments.length;i++)
-            console.log( arguments[i] );
-        }
-    }
     function timeConverter(UNIX_timestamp, full){
         var a = new Date(UNIX_timestamp*1000);
         var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
@@ -117,7 +111,7 @@ $( function() {
     function clearCache(e) {
         e.preventDefault();
         if (window.confirm("Clear all users?")) { 
-            var all = getAllStoredGits();
+            var all = getAllStoredGits(); // export.js
             for( obj in all ) {
                 localStorage.removeItem(all.id);
             }
@@ -125,11 +119,11 @@ $( function() {
         }
     }
     
-    function getLSlength( ls ) {
+    function getLSlengthhh( ls ) {
         var getIt = JSON.parse( localStorage.getItem( ls ) );
         return getIt.favs.length;
     }
-    function getAllStoredGits() {
+    function getAllStoredGitsss() {
         var result = [];
         for( obj in localStorage ) {
             if( obj.indexOf('git.star') > -1 ) 
@@ -343,9 +337,6 @@ $( function() {
     
     function filtersBtn() {
         var filterValue = $( this ).attr('data-filter');
-        log(filterValue)
-        // use filterFn if matches value
-//        filterValue = filterFns[ filterValue ] || filterValue;
         $container.isotope({ filter: filterValue });
         setTimeout( showVisibleItemsNumber, 1000 );
     }
@@ -447,7 +438,6 @@ $( function() {
         $(".context-menu").hide(100);
     });
     
-   
     // </editor-fold>
     
 });

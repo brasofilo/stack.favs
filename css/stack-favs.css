@@ -248,9 +248,24 @@ input{
 }
 .select-inputs.flair {
     border: 0;
-    top: 5px;
+    top: 30px;
     position: absolute;
     right: 0;
+}
+h1 .site-logo {
+    width: 60px
+}
+h1 .site-logo img{
+    max-width: 60px;
+    float: left;
+    margin-top: -6px;
+}
+.filter-gray{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
 }
 /* FOR SE FLAIRS, now using se-flair.appspot 
 .select-inputs.flair-single-site img {
@@ -299,7 +314,7 @@ a.goto-user {
     padding:3px 14px;
     text-decoration:none;
     position:relative;
-    margin-left:13px;
+    margin-left:23px;
     transition: all 0.3s ease;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -341,7 +356,6 @@ a.goto-user:hover span {
     margin-left:32px;
     overflow:hidden;
     padding:8px;
-
 } 
 a.goto-user.goto-git:hover span {
     width:180px;
@@ -459,11 +473,11 @@ http://html-generator.weebly.com/css-radio-button-checkbox.html
     display:none;
 }
 
-#sliderLabel input:checked + #slider {
+#sliderLabel input:checked + #sliderMeta {
     left:0;
 }
 
-#slider {
+#sliderMeta {
     left:-50px;
     position:absolute;
     -webkit-transition:left .25s ease-out;
