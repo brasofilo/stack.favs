@@ -69,18 +69,20 @@ $( function() {
         $("#overlayDialog textarea").val(output).select();
         
         $("#overlayDialog").dialog ( {
-            modal:      false,
+            modal:      true,
             title:      "all stored ids",
-            position:   {
-                   my: "top",
-                   at: "top",
-                   of: document
-                   , collision: "none"
-            },
+//            position:   {
+//                   my: "top",
+//                   at: "top",
+//                   of: document
+//                   , collision: "none"
+//            },
             width:      "auto",
             minWidth:   400,
             minHeight:  500,
-            zIndex:     3666
+            zIndex:     3666,
+            closeText: "hide",
+            open: function(event, ui) { $('.ui-widget-overlay').bind('click', function(){ $("#overlayDialog").dialog('close'); }); }
         } )
         .dialog ("widget").draggable ("option", "containment", "none");
     });

@@ -256,9 +256,8 @@ h1 .site-logo {
     width: 60px
 }
 h1 .site-logo img{
-    max-width: 60px;
     float: left;
-    margin-top: -6px;
+    margin: 9px 8px 0 0;
 }
 .filter-gray{
     filter: grayscale(100%);

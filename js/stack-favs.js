@@ -407,7 +407,7 @@ $( function() {
                             + meta_api_param + meta_url_param 
                             + ' data-site-url="' + val.site_url + '"'
                             + ' data-image="http://cdn.sstatic.net/' + val.favicon_url + '"'
-                            + ' data-imagecss="http://cdn.sstatic.net/' + val.high_resolution_icon_url + '"' // for dd-dropdown
+                            + ' data-imagecss="http://cdn.sstatic.net/' + val.favicon_url + '"' // for dd-dropdown
                             + '>' + val.name + '</option>';
                 site_items.push( option_html );
             }
@@ -448,7 +448,7 @@ $( function() {
             makeStoredUsers(current_site);
         }
         else {
-            $('h1 .site-logo').html('<img src="http://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" />');
+            $('h1 .site-logo').html('<img src="http://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" width="32" />');
             resetStoredUsers();
         }
         
