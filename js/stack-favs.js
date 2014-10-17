@@ -421,7 +421,6 @@ $( function() {
         $('#select-site-user .site-select').wrap('<span class="select-inputs sites-dd"></span>');
         try {
             $oDD = $('#select-site-user .site-select').msDropdown({on:{change:function(e){
-                        console.log('dropdown',e)
                         current_site = e.value !== 'default' ? e.value : false;
                         refreshDropDown( current_site, e.imagecss );
                     }}}).data('dd');
