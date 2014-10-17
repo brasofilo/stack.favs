@@ -415,9 +415,8 @@ a.goto-user span img {
 
 
 
-footer#colophon {
+#footer {
     display: block;
-    text-align: center;
     background: black;
     position:fixed;
     left:0px;
@@ -426,30 +425,43 @@ footer#colophon {
     width:100%;
     line-height: 17px;
     opacity: .9;
-}
-
-footer#colophon span.foo-text, 
-footer#colophon span.foo-text a,
-footer#colophon span.foo-text a:visited { 
     font-family: 'Open Sans';
-    text-decoration: none;
-}
-footer#colophon span.foo-text {
     color: #FFF6E8;
-    opacity:.6;
     font-size: 0.8em;
 }
-footer#colophon span.foo-text a {
+
+#footer .foo-text a,
+#footer .foo-text a:visited { 
+    text-decoration: none;
+}
+#footer .foo-text {
+    text-align: center;
+    opacity:.6;
+    margin: 0 auto;
+    width: 70%;
+}
+#footer .foo-text a {
     font-size: 1em;
     color:#fff;
     opacity: 1;
 }
-footer#colophon .foo-text a:hover {
+#footer .foo-text a:hover {
     text-decoration: underline; 
 }
+#footer .footer-left {
+float: left;
+    opacity:.6;
+margin-left: 5px;
+}
+#footer .footer-right {
+    opacity:.6;
+float: right;
+margin-right: 5px;
+}
 
-
-
+#export-ids {
+color: #ccc;
+}
 
 
 /*
