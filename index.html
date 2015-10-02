@@ -6,7 +6,7 @@
     <script>
     /********************** New version mandatory update **********************************/
     if( !localStorage.getItem('se-favorites-version') ) {
-        if (window.confirm("Sorry, the new version has to erase all previous SE data...")) { 
+        if (window.confirm("Sorry, the new version has to erase all previous SE-favorites data...")) { 
             for( obj in localStorage ) { 
                 if( localStorage[obj].indexOf('[{"user":') === 0 ) {
                     localStorage.removeItem(obj);
