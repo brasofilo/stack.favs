@@ -79,8 +79,8 @@ $( function() {
         var unicode = false; // http://stackapps.com/questions/2119/#comment11865_2119
         if( !unicode ) {
             var iframe = '<iframe id="myIframe" width="210" height="58" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="$ifSource">asdf</iframe>',
-                se_url   = 'http://stackexchange.com/users/$account',
-                se_flair = 'http://se-flair.appspot.com/$account.html';
+                se_url   = 'https://stackexchange.com/users/$account',
+                se_flair = 'https://se-flair.appspot.com/$account.html';
             se_url = se_url.replace( '$account', account );
             se_flair = se_flair.replace( '$account', account );
 
@@ -406,8 +406,8 @@ $( function() {
                 option_html = '<option value="' + val.api_site_parameter + '"' 
                             + meta_api_param + meta_url_param 
                             + ' data-site-url="' + val.site_url + '"'
-                            + ' data-image="http://cdn.sstatic.net/' + val.favicon_url + '"'
-                            + ' data-imagecss="http://cdn.sstatic.net/' + val.favicon_url + '"' // for dd-dropdown
+                            + ' data-image="https://cdn.sstatic.net/' + val.favicon_url + '"'
+                            + ' data-imagecss="https://cdn.sstatic.net/' + val.favicon_url + '"' // for dd-dropdown
                             + '>' + val.name + '</option>';
                 site_items.push( option_html );
             }
@@ -448,7 +448,7 @@ $( function() {
             makeStoredUsers(current_site);
         }
         else {
-            $('h1 .site-logo').html('<img src="http://cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" width="32" />');
+            $('h1 .site-logo').html('<img src="//cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" width="32" />');
             resetStoredUsers();
         }
         
@@ -464,7 +464,7 @@ $( function() {
         var account,
             nick = user,
             get_site = ( site === 'meta.main' ) ? 'meta' : site,
-            uri = 'http://api.stackexchange.com/2.2/users/' + user
+            uri = 'https://api.stackexchange.com/2.2/users/' + user
                 + '?pagesize=1&site=' + get_site
                 + '&key=WfdrC3u7rmAQDwaSRYrw2w((',
             json_call = function(data){
@@ -486,7 +486,7 @@ $( function() {
     
     function getAPI( page, site, user ) {
         var get_site = ( site === 'meta.main' ) ? 'meta' : site,
-            uri = 'http://api.stackexchange.com/2.2/users/' + user
+            uri = 'https://api.stackexchange.com/2.2/users/' + user
             + '/favorites?page=' + page 
             + '&pagesize=100&order=desc&sort=added&site=' + get_site
             + '&key=WfdrC3u7rmAQDwaSRYrw2w((';
