@@ -2,11 +2,12 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Stack Echange Favorites</title>
+    <title>Stack Exchange Favorites</title>
     <script>
     /********************** New version mandatory update **********************************/
     if( !localStorage.getItem('se-favorites-version') ) {
-        if (window.confirm("Sorry, the new version has to erase all previous SE-favorites data...")) { 
+        /* Not really necessary */
+        //if (window.confirm("Sorry, the new version has to erase all previous SE-favorites data...")) { 
             for( obj in localStorage ) { 
                 if( localStorage[obj].indexOf('[{"user":') === 0 ) {
                     localStorage.removeItem(obj);
@@ -14,7 +15,7 @@
             }
             localStorage.setItem('se-favorites-version', '1.1');
             window.location.replace(window.location.origin+window.location.pathname);
-        }
+        //}
     }
 
     </script>
@@ -40,8 +41,8 @@
         <li data-action="del">Delete</li>
     </ul>
     <!-- export dialog -->
-    <div id="overlayDialog" style="display:none"><textarea readonly style="width:400px;height:500px">Sample Dialog added using jQuery-UI</textarea><br /><button id="clear-all-stored-data">clear all data</button></div>
-    <h1><i class="site-logo"><img src="//cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" width="32" /></i>SE favorites <sup><sub><a href="/stack.favs/git-repos.html" style="margin-left: 20px; font-size:.5em; font-weight: bold">Starred Git repos</a></sub></sup></h1>
+    <div id="overlayDialog" style="display:none"><textarea readonly style="width:400px;height:500px">Sample Dialog added using jQuery-UI</textarea><br /><button id="clear-all-stored-data">clear all data</button></div> (right-click for options)
+    <h1><i class="site-logo"><img src="//cdn.sstatic.net/stackexchange/img/apple-touch-icon.png" width="32" /></i>SE favorites <!--<sup><sub><a href="/stack.favs/git-repos.html" style="margin-left: 20px; font-size:.5em; font-weight: bold">Starred Git repos</a></sub></sup>--></h1>
     <div id="select-site-user">
         <!-- Meta button -->
         <span class='select-inputs meta-cb'>
