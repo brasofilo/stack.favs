@@ -224,7 +224,7 @@ $( function() {
         if( get_users && get_users.length > 0) {
 
             buttons = 'Stored users @' + the_site+': ';
-            buttons += ' <sub><sup><a id="clear-cache" data-site="' + the_site + '" href="#">clear</a></sup></sub> ';
+            buttons += ' <sub><sup><a id="clear-cache" data-site="' + the_site + '" href="#">clear</a>  (or right-click user for options)</sup></sub> ';
             
             get_users.forEach(function(v,k){
                 var anchor,
