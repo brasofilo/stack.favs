@@ -22,7 +22,7 @@ var sites_arr = [
     ],
     "launch_date": 1221436800,
     "high_resolution_icon_url": "stackoverflow/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico",
+    "favicon_url": "stackoverflow/img/favicon.ico",
     "audience": "professional and enthusiast programmers",
     "site_url": "http://stackoverflow.com",
     "api_site_parameter": "stackoverflow",
@@ -47,7 +47,7 @@ var sites_arr = [
     "launch_date": 1243296000,
     "high_resolution_icon_url": "serverfault/img/apple-touch-icon@2.png",
     "twitter_account": "ServerFault",
-    "favicon_url": "//cdn.sstatic.net/Sites/serverfault/img/favicon.ico",
+    "favicon_url": "serverfault/img/favicon.ico",
     "audience": "professional system and network administrators",
     "site_url": "http://serverfault.com",
     "api_site_parameter": "serverfault",
@@ -72,7 +72,7 @@ var sites_arr = [
     "launch_date": 1250553600,
     "high_resolution_icon_url": "superuser/img/apple-touch-icon@2.png",
     "twitter_account": "super_user",
-    "favicon_url": "//cdn.sstatic.net/Sites/superuser/img/favicon.ico",
+    "favicon_url": "superuser/img/favicon.ico",
     "audience": "computer enthusiasts and power users",
     "site_url": "http://superuser.com",
     "api_site_parameter": "superuser",
@@ -90,7 +90,7 @@ var sites_arr = [
     ],
     "launch_date": 1246147200,
     "high_resolution_icon_url": "stackexchangemeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/stackexchangemeta/img/favicon.ico",
+    "favicon_url": "stackexchangemeta/img/favicon.ico",
     "audience": "meta-discussion of the Stack Exchange family of Q&amp;A websites",
     "site_url": "http://meta.stackexchange.com",
     "api_site_parameter": "meta.main",
@@ -117,7 +117,7 @@ var sites_arr = [
     "closed_beta_date": 1277856000,
     "high_resolution_icon_url": "webapps/img/apple-touch-icon@2.png",
     "twitter_account": "StackWebApps",
-    "favicon_url": "//cdn.sstatic.net/Sites/webapps/img/favicon.ico",
+    "favicon_url": "webapps/img/favicon.ico",
     "audience": "power users of web applications",
     "site_url": "http://webapps.stackexchange.com",
     "api_site_parameter": "webapps",
@@ -140,7 +140,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "webappsmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/webappsmeta/img/favicon.ico",
+    "favicon_url": "webappsmeta/img/favicon.ico",
     "audience": "power users of web applications",
     "site_url": "http://meta.webapps.stackexchange.com",
     "api_site_parameter": "meta.webapps",
@@ -167,7 +167,7 @@ var sites_arr = [
     "closed_beta_date": 1278460800,
     "high_resolution_icon_url": "gaming/img/apple-touch-icon@2.png",
     "twitter_account": "TheArqade",
-    "favicon_url": "//cdn.sstatic.net/Sites/gaming/img/favicon.ico",
+    "favicon_url": "gaming/img/favicon.ico",
     "audience": "passionate videogamers on all platforms",
     "site_url": "http://gaming.stackexchange.com",
     "api_site_parameter": "gaming",
@@ -190,7 +190,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "gamingmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/gamingmeta/img/favicon.ico",
+    "favicon_url": "gamingmeta/img/favicon.ico",
     "audience": "passionate videogamers on all platforms",
     "site_url": "http://meta.gaming.stackexchange.com",
     "api_site_parameter": "meta.gaming",
@@ -217,7 +217,7 @@ var sites_arr = [
     "closed_beta_date": 1278547200,
     "high_resolution_icon_url": "webmasters/img/apple-touch-icon@2.png",
     "twitter_account": "StackWebmasters",
-    "favicon_url": "//cdn.sstatic.net/Sites/webmasters/img/favicon.ico",
+    "favicon_url": "webmasters/img/favicon.ico",
     "audience": "pro webmasters",
     "site_url": "http://webmasters.stackexchange.com",
     "api_site_parameter": "webmasters",
@@ -240,7 +240,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "webmastersmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/webmastersmeta/img/favicon.ico",
+    "favicon_url": "webmastersmeta/img/favicon.ico",
     "audience": "pro webmasters",
     "site_url": "http://meta.webmasters.stackexchange.com",
     "api_site_parameter": "meta.webmasters",
@@ -267,7 +267,7 @@ var sites_arr = [
     "closed_beta_date": 1278633600,
     "high_resolution_icon_url": "cooking/img/apple-touch-icon@2.png",
     "twitter_account": "StackCooking",
-    "favicon_url": "//cdn.sstatic.net/Sites/cooking/img/favicon.ico",
+    "favicon_url": "cooking/img/favicon.ico",
     "audience": "professional and amateur chefs",
     "site_url": "http://cooking.stackexchange.com",
     "api_site_parameter": "cooking",
@@ -290,7 +290,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "cookingmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/cookingmeta/img/favicon.ico",
+    "favicon_url": "cookingmeta/img/favicon.ico",
     "audience": "professional and amateur chefs",
     "site_url": "http://meta.cooking.stackexchange.com",
     "api_site_parameter": "meta.cooking",
@@ -317,7 +317,7 @@ var sites_arr = [
     "closed_beta_date": 1279065600,
     "high_resolution_icon_url": "gamedev/img/apple-touch-icon@2.png",
     "twitter_account": "StackGameDev",
-    "favicon_url": "//cdn.sstatic.net/Sites/gamedev/img/favicon.ico",
+    "favicon_url": "gamedev/img/favicon.ico",
     "audience": "professional and independent game developers",
     "site_url": "http://gamedev.stackexchange.com",
     "api_site_parameter": "gamedev",
@@ -340,7 +340,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "gamedevmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/gamedevmeta/img/favicon.ico",
+    "favicon_url": "gamedevmeta/img/favicon.ico",
     "audience": "professional and independent game developers",
     "site_url": "http://meta.gamedev.stackexchange.com",
     "api_site_parameter": "meta.gamedev",
@@ -367,7 +367,7 @@ var sites_arr = [
     "closed_beta_date": 1279152000,
     "high_resolution_icon_url": "photo/img/apple-touch-icon@2.png",
     "twitter_account": "StackPhotos",
-    "favicon_url": "//cdn.sstatic.net/Sites/photo/img/favicon.ico",
+    "favicon_url": "photo/img/favicon.ico",
     "audience": "professional, enthusiast and amateur photographers",
     "site_url": "http://photo.stackexchange.com",
     "api_site_parameter": "photo",
@@ -390,7 +390,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "photometa/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/photometa/img/favicon.ico",
+    "favicon_url": "photometa/img/favicon.ico",
     "audience": "professional, enthusiast and amateur photographers",
     "site_url": "http://meta.photo.stackexchange.com",
     "api_site_parameter": "meta.photo",
@@ -417,7 +417,7 @@ var sites_arr = [
     "closed_beta_date": 1279497600,
     "high_resolution_icon_url": "stats/img/apple-touch-icon@2.png",
     "twitter_account": "StackStats",
-    "favicon_url": "//cdn.sstatic.net/Sites/stats/img/favicon.ico",
+    "favicon_url": "stats/img/favicon.ico",
     "audience": "people interested in statistics, machine learning, data analysis, data mining, and data visualization",
     "site_url": "http://stats.stackexchange.com",
     "api_site_parameter": "stats",
@@ -440,7 +440,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "statsmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/statsmeta/img/favicon.ico",
+    "favicon_url": "statsmeta/img/favicon.ico",
     "audience": "people interested in statistics, machine learning, data analysis, data mining, and data visualization",
     "site_url": "http://meta.stats.stackexchange.com",
     "api_site_parameter": "meta.stats",
@@ -467,7 +467,7 @@ var sites_arr = [
     "closed_beta_date": 1279584000,
     "high_resolution_icon_url": "math/img/apple-touch-icon@2.png",
     "twitter_account": "StackMath",
-    "favicon_url": "//cdn.sstatic.net/Sites/math/img/favicon.ico",
+    "favicon_url": "math/img/favicon.ico",
     "audience": "people studying math at any level and professionals in related fields",
     "site_url": "http://math.stackexchange.com",
     "api_site_parameter": "math",
@@ -490,7 +490,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "mathmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/mathmeta/img/favicon.ico",
+    "favicon_url": "mathmeta/img/favicon.ico",
     "audience": "people studying math at any level and professionals in related fields",
     "site_url": "http://meta.math.stackexchange.com",
     "api_site_parameter": "meta.math",
@@ -517,7 +517,7 @@ var sites_arr = [
     "closed_beta_date": 1279670400,
     "high_resolution_icon_url": "diy/img/apple-touch-icon@2.png",
     "twitter_account": "StackDIY",
-    "favicon_url": "//cdn.sstatic.net/Sites/diy/img/favicon.ico",
+    "favicon_url": "diy/img/favicon.ico",
     "audience": "contractors and serious DIYers",
     "site_url": "http://diy.stackexchange.com",
     "api_site_parameter": "diy",
@@ -540,7 +540,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "diymeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/diymeta/img/favicon.ico",
+    "favicon_url": "diymeta/img/favicon.ico",
     "audience": "contractors and serious DIYers",
     "site_url": "http://meta.diy.stackexchange.com",
     "api_site_parameter": "meta.diy",
@@ -563,7 +563,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "superusermeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/superusermeta/img/favicon.ico",
+    "favicon_url": "superusermeta/img/favicon.ico",
     "audience": "computer enthusiasts and power users",
     "site_url": "http://meta.superuser.com",
     "api_site_parameter": "meta.superuser",
@@ -586,7 +586,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "serverfaultmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/serverfaultmeta/img/favicon.ico",
+    "favicon_url": "serverfaultmeta/img/favicon.ico",
     "audience": "system administrators and IT professionals",
     "site_url": "http://meta.serverfault.com",
     "api_site_parameter": "meta.serverfault",
@@ -613,7 +613,7 @@ var sites_arr = [
     "closed_beta_date": 1279756800,
     "high_resolution_icon_url": "gis/img/apple-touch-icon@2.png",
     "twitter_account": "StackGIS",
-    "favicon_url": "//cdn.sstatic.net/Sites/gis/img/favicon.ico",
+    "favicon_url": "gis/img/favicon.ico",
     "audience": "cartographers, geographers and GIS professionals",
     "site_url": "http://gis.stackexchange.com",
     "api_site_parameter": "gis",
@@ -636,7 +636,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "gismeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/gismeta/img/favicon.ico",
+    "favicon_url": "gismeta/img/favicon.ico",
     "audience": "cartographers, geographers and GIS professionals",
     "site_url": "http://meta.gis.stackexchange.com",
     "api_site_parameter": "meta.gis",
@@ -663,7 +663,7 @@ var sites_arr = [
     "closed_beta_date": 1280102400,
     "high_resolution_icon_url": "tex/img/apple-touch-icon@2.png",
     "twitter_account": "StackTeX",
-    "favicon_url": "//cdn.sstatic.net/Sites/tex/img/favicon.ico",
+    "favicon_url": "tex/img/favicon.ico",
     "audience": "users of TeX, LaTeX, ConTeXt, and related typesetting systems",
     "site_url": "http://tex.stackexchange.com",
     "api_site_parameter": "tex",
@@ -686,7 +686,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "texmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/texmeta/img/favicon.ico",
+    "favicon_url": "texmeta/img/favicon.ico",
     "audience": "users of TeX, LaTeX, ConTeXt, and related typesetting systems",
     "site_url": "http://meta.tex.stackexchange.com",
     "api_site_parameter": "meta.tex",
@@ -713,7 +713,7 @@ var sites_arr = [
     "closed_beta_date": 1280275200,
     "high_resolution_icon_url": "askubuntu/img/apple-touch-icon@2.png",
     "twitter_account": "AskUbuntu",
-    "favicon_url": "//cdn.sstatic.net/Sites/askubuntu/img/favicon.ico",
+    "favicon_url": "askubuntu/img/favicon.ico",
     "audience": "Ubuntu users and developers",
     "site_url": "http://askubuntu.com",
     "api_site_parameter": "askubuntu",
@@ -736,7 +736,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "askubuntumeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/askubuntumeta/img/favicon.ico",
+    "favicon_url": "askubuntumeta/img/favicon.ico",
     "audience": "Ubuntu users and developers",
     "site_url": "http://meta.askubuntu.com",
     "api_site_parameter": "meta.askubuntu",
@@ -763,7 +763,7 @@ var sites_arr = [
     "closed_beta_date": 1280880000,
     "high_resolution_icon_url": "money/img/apple-touch-icon@2.png",
     "twitter_account": "StackFinance",
-    "favicon_url": "//cdn.sstatic.net/Sites/money/img/favicon.ico",
+    "favicon_url": "money/img/favicon.ico",
     "audience": "people who want to be financially literate",
     "site_url": "http://money.stackexchange.com",
     "api_site_parameter": "money",
@@ -786,7 +786,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "moneymeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/moneymeta/img/favicon.ico",
+    "favicon_url": "moneymeta/img/favicon.ico",
     "audience": "people who want to be financially literate",
     "site_url": "http://meta.money.stackexchange.com",
     "api_site_parameter": "meta.money",
@@ -813,7 +813,7 @@ var sites_arr = [
     "closed_beta_date": 1280966400,
     "high_resolution_icon_url": "english/img/apple-touch-icon@2.png",
     "twitter_account": "StackEnglish",
-    "favicon_url": "//cdn.sstatic.net/Sites/english/img/favicon.ico",
+    "favicon_url": "english/img/favicon.ico",
     "audience": "linguists, etymologists, and serious English language enthusiasts",
     "site_url": "http://english.stackexchange.com",
     "api_site_parameter": "english",
@@ -836,7 +836,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "englishmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/englishmeta/img/favicon.ico",
+    "favicon_url": "englishmeta/img/favicon.ico",
     "audience": "linguists, etymologists, and serious English language enthusiasts",
     "site_url": "http://meta.english.stackexchange.com",
     "api_site_parameter": "meta.english",
@@ -854,7 +854,7 @@ var sites_arr = [
     ],
     "launch_date": 1274313600,
     "high_resolution_icon_url": "stackapps/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/stackapps/img/favicon.ico",
+    "favicon_url": "stackapps/img/favicon.ico",
     "audience": "apps, scripts, and development with the Stack Exchange API",
     "site_url": "http://stackapps.com",
     "api_site_parameter": "stackapps",
@@ -881,7 +881,7 @@ var sites_arr = [
     "closed_beta_date": 1281312000,
     "high_resolution_icon_url": "ux/img/apple-touch-icon@2.png",
     "twitter_account": "StackUX",
-    "favicon_url": "//cdn.sstatic.net/Sites/ux/img/favicon.ico",
+    "favicon_url": "ux/img/favicon.ico",
     "audience": "user experience researchers and experts",
     "site_url": "http://ux.stackexchange.com",
     "api_site_parameter": "ux",
@@ -904,7 +904,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "uxmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/uxmeta/img/favicon.ico",
+    "favicon_url": "uxmeta/img/favicon.ico",
     "audience": "user experience researchers and experts",
     "site_url": "http://meta.ux.stackexchange.com",
     "api_site_parameter": "meta.ux",
@@ -931,7 +931,7 @@ var sites_arr = [
     "closed_beta_date": 1281398400,
     "high_resolution_icon_url": "unix/img/apple-touch-icon@2.png",
     "twitter_account": "StackUnix",
-    "favicon_url": "//cdn.sstatic.net/Sites/unix/img/favicon.ico",
+    "favicon_url": "unix/img/favicon.ico",
     "audience": "users of Linux, FreeBSD and other Un*x-like operating systems.",
     "site_url": "http://unix.stackexchange.com",
     "api_site_parameter": "unix",
@@ -954,7 +954,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "unixmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/unixmeta/img/favicon.ico",
+    "favicon_url": "unixmeta/img/favicon.ico",
     "audience": "users of Linux, FreeBSD and other Un*x-like operating systems.",
     "site_url": "http://meta.unix.stackexchange.com",
     "api_site_parameter": "meta.unix",
@@ -981,7 +981,7 @@ var sites_arr = [
     "closed_beta_date": 1281484800,
     "high_resolution_icon_url": "wordpress/img/apple-touch-icon@2.png",
     "twitter_account": "StackWordPress",
-    "favicon_url": "//cdn.sstatic.net/Sites/wordpress/img/favicon.ico",
+    "favicon_url": "wordpress/img/favicon.ico",
     "audience": "WordPress developers and administrators",
     "site_url": "http://wordpress.stackexchange.com",
     "api_site_parameter": "wordpress",
@@ -1004,7 +1004,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "wordpressmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/wordpressmeta/img/favicon.ico",
+    "favicon_url": "wordpressmeta/img/favicon.ico",
     "audience": "WordPress developers and administrators",
     "site_url": "http://meta.wordpress.stackexchange.com",
     "api_site_parameter": "meta.wordpress",
@@ -1031,7 +1031,7 @@ var sites_arr = [
     "closed_beta_date": 1281916800,
     "high_resolution_icon_url": "cstheory/img/apple-touch-icon@2.png",
     "twitter_account": "StackCSTheory",
-    "favicon_url": "//cdn.sstatic.net/Sites/cstheory/img/favicon.ico",
+    "favicon_url": "cstheory/img/favicon.ico",
     "audience": "theoretical computer scientists and researchers in related fields",
     "site_url": "http://cstheory.stackexchange.com",
     "api_site_parameter": "cstheory",
@@ -1054,7 +1054,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "cstheorymeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/cstheorymeta/img/favicon.ico",
+    "favicon_url": "cstheorymeta/img/favicon.ico",
     "audience": "theoretical computer scientists and researchers in related fields",
     "site_url": "http://meta.cstheory.stackexchange.com",
     "api_site_parameter": "meta.cstheory",
@@ -1081,7 +1081,7 @@ var sites_arr = [
     "closed_beta_date": 1282003200,
     "high_resolution_icon_url": "apple/img/apple-touch-icon@2.png",
     "twitter_account": "askdifferent",
-    "favicon_url": "//cdn.sstatic.net/Sites/apple/img/favicon.ico",
+    "favicon_url": "apple/img/favicon.ico",
     "audience": "power users of Apple hardware and software",
     "site_url": "http://apple.stackexchange.com",
     "api_site_parameter": "apple",
@@ -1104,7 +1104,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "applemeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/applemeta/img/favicon.ico",
+    "favicon_url": "applemeta/img/favicon.ico",
     "audience": "power users of Apple hardware and software",
     "site_url": "http://meta.apple.stackexchange.com",
     "api_site_parameter": "meta.apple",
@@ -1131,7 +1131,7 @@ var sites_arr = [
     "closed_beta_date": 1282176000,
     "high_resolution_icon_url": "rpg/img/apple-touch-icon@2.png",
     "twitter_account": "StackRPG",
-    "favicon_url": "//cdn.sstatic.net/Sites/rpg/img/favicon.ico",
+    "favicon_url": "rpg/img/favicon.ico",
     "audience": "gamemasters and players of tabletop, paper-and-pencil role-playing games",
     "site_url": "http://rpg.stackexchange.com",
     "api_site_parameter": "rpg",
@@ -1154,7 +1154,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "rpgmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/rpgmeta/img/favicon.ico",
+    "favicon_url": "rpgmeta/img/favicon.ico",
     "audience": "gamemasters and players of tabletop, paper-and-pencil role-playing games",
     "site_url": "http://meta.rpg.stackexchange.com",
     "api_site_parameter": "meta.rpg",
@@ -1181,7 +1181,7 @@ var sites_arr = [
     "closed_beta_date": 1282694400,
     "high_resolution_icon_url": "bicycles/img/apple-touch-icon@2.png",
     "twitter_account": "StackBicycles",
-    "favicon_url": "//cdn.sstatic.net/Sites/bicycles/img/favicon.ico",
+    "favicon_url": "bicycles/img/favicon.ico",
     "audience": "people who build and repair bicycles, people who train cycling, or commute on bicycles",
     "site_url": "http://bicycles.stackexchange.com",
     "api_site_parameter": "bicycles",
@@ -1204,7 +1204,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "bicyclesmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/bicyclesmeta/img/favicon.ico",
+    "favicon_url": "bicyclesmeta/img/favicon.ico",
     "audience": "people who build and repair bicycles, people who train cycling, or commute on bicycles",
     "site_url": "http://meta.bicycles.stackexchange.com",
     "api_site_parameter": "meta.bicycles",
@@ -1231,7 +1231,7 @@ var sites_arr = [
     "closed_beta_date": 1283299200,
     "high_resolution_icon_url": "programmers/img/apple-touch-icon@2.png",
     "twitter_account": "StackProgrammer",
-    "favicon_url": "//cdn.sstatic.net/Sites/programmers/img/favicon.ico",
+    "favicon_url": "programmers/img/favicon.ico",
     "audience": "professional programmers interested in conceptual questions about software development",
     "site_url": "http://programmers.stackexchange.com",
     "api_site_parameter": "programmers",
@@ -1254,7 +1254,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "programmersmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/programmersmeta/img/favicon.ico",
+    "favicon_url": "programmersmeta/img/favicon.ico",
     "audience": "professional programmers interested in conceptual questions about software development",
     "site_url": "http://meta.programmers.stackexchange.com",
     "api_site_parameter": "meta.programmers",
@@ -1281,7 +1281,7 @@ var sites_arr = [
     "closed_beta_date": 1285718400,
     "high_resolution_icon_url": "electronics/img/apple-touch-icon@2.png",
     "twitter_account": "StackElectronix",
-    "favicon_url": "//cdn.sstatic.net/Sites/electronics/img/favicon.ico",
+    "favicon_url": "electronics/img/favicon.ico",
     "audience": "electronics and electrical engineering professionals, students, and enthusiasts",
     "site_url": "http://electronics.stackexchange.com",
     "api_site_parameter": "electronics",
@@ -1304,7 +1304,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "electronicsmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/electronicsmeta/img/favicon.ico",
+    "favicon_url": "electronicsmeta/img/favicon.ico",
     "audience": "electronic hardware hacking enthusiasts",
     "site_url": "http://meta.electronics.stackexchange.com",
     "api_site_parameter": "meta.electronics",
@@ -1331,7 +1331,7 @@ var sites_arr = [
     "closed_beta_date": 1284336000,
     "high_resolution_icon_url": "android/img/apple-touch-icon@2.png",
     "twitter_account": "StackAndroid",
-    "favicon_url": "//cdn.sstatic.net/Sites/android/img/favicon.ico",
+    "favicon_url": "android/img/favicon.ico",
     "audience": "enthusiasts and power users of the Android operating system",
     "site_url": "http://android.stackexchange.com",
     "api_site_parameter": "android",
@@ -1354,7 +1354,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "androidmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/androidmeta/img/favicon.ico",
+    "favicon_url": "androidmeta/img/favicon.ico",
     "audience": "enthusiasts and power users of the Android operating system",
     "site_url": "http://meta.android.stackexchange.com",
     "api_site_parameter": "meta.android",
@@ -1379,7 +1379,7 @@ var sites_arr = [
     "open_beta_date": 1288051200,
     "closed_beta_date": 1287446400,
     "twitter_account": "StackBoardGames",
-    "favicon_url": "//cdn.sstatic.net/Sites/boardgames/img/favicon.ico",
+    "favicon_url": "boardgames/img/favicon.ico",
     "audience": "people who like playing board games, designing board games or modifying the rules of existing board games",
     "site_url": "http://boardgames.stackexchange.com",
     "api_site_parameter": "boardgames",
@@ -1401,7 +1401,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/boardgamesmeta/img/favicon.ico",
+    "favicon_url": "boardgamesmeta/img/favicon.ico",
     "audience": "people who like playing board games, designing board games or modifying the rules of existing board games",
     "site_url": "http://meta.boardgames.stackexchange.com",
     "api_site_parameter": "meta.boardgames",
@@ -1428,7 +1428,7 @@ var sites_arr = [
     "closed_beta_date": 1288656000,
     "high_resolution_icon_url": "physics/img/apple-touch-icon@2.png",
     "twitter_account": "StackPhysics",
-    "favicon_url": "//cdn.sstatic.net/Sites/physics/img/favicon.ico",
+    "favicon_url": "physics/img/favicon.ico",
     "audience": "active researchers, academics and students of physics",
     "site_url": "http://physics.stackexchange.com",
     "api_site_parameter": "physics",
@@ -1451,7 +1451,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "physicsmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/physicsmeta/img/favicon.ico",
+    "favicon_url": "physicsmeta/img/favicon.ico",
     "audience": "active researchers, academics and students of physics",
     "site_url": "http://meta.physics.stackexchange.com",
     "api_site_parameter": "meta.physics",
@@ -1476,7 +1476,7 @@ var sites_arr = [
     "open_beta_date": 1289779200,
     "closed_beta_date": 1289174400,
     "twitter_account": "StackHomebrew",
-    "favicon_url": "//cdn.sstatic.net/Sites/homebrew/img/favicon.ico",
+    "favicon_url": "homebrew/img/favicon.ico",
     "audience": "dedicated home brewers and serious enthusiasts",
     "site_url": "http://homebrew.stackexchange.com",
     "api_site_parameter": "homebrew",
@@ -1498,7 +1498,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/homebrewmeta/img/favicon.ico",
+    "favicon_url": "homebrewmeta/img/favicon.ico",
     "audience": "dedicated home brewers and serious enthusiasts",
     "site_url": "http://meta.homebrew.stackexchange.com",
     "api_site_parameter": "meta.homebrew",
@@ -1525,7 +1525,7 @@ var sites_arr = [
     "closed_beta_date": 1289433600,
     "high_resolution_icon_url": "security/img/apple-touch-icon@2.png",
     "twitter_account": "StackSecurity",
-    "favicon_url": "//cdn.sstatic.net/Sites/security/img/favicon.ico",
+    "favicon_url": "security/img/favicon.ico",
     "audience": "Information security professionals",
     "site_url": "http://security.stackexchange.com",
     "api_site_parameter": "security",
@@ -1548,7 +1548,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "securitymeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/securitymeta/img/favicon.ico",
+    "favicon_url": "securitymeta/img/favicon.ico",
     "audience": "Information security professionals",
     "site_url": "http://meta.security.stackexchange.com",
     "api_site_parameter": "meta.security",
@@ -1573,7 +1573,7 @@ var sites_arr = [
     "open_beta_date": 1290643200,
     "closed_beta_date": 1290038400,
     "twitter_account": "StackWriters",
-    "favicon_url": "//cdn.sstatic.net/Sites/writers/img/favicon.ico",
+    "favicon_url": "writers/img/favicon.ico",
     "audience": "authors, editors, reviewers, professional writers, and aspiring writers",
     "site_url": "http://writers.stackexchange.com",
     "api_site_parameter": "writers",
@@ -1595,7 +1595,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/writersmeta/img/favicon.ico",
+    "favicon_url": "writersmeta/img/favicon.ico",
     "audience": "authors, editors, reviewers, professional writers, and aspiring writers",
     "site_url": "http://meta.writers.stackexchange.com",
     "api_site_parameter": "meta.writers",
@@ -1620,7 +1620,7 @@ var sites_arr = [
     "open_beta_date": 1292284800,
     "closed_beta_date": 1291680000,
     "twitter_account": "StackAVP",
-    "favicon_url": "//cdn.sstatic.net/Sites/avp/img/favicon.ico",
+    "favicon_url": "avp/img/favicon.ico",
     "audience": "engineers, producers, editors, and enthusiasts spanning the fields of video, and media creation",
     "site_url": "http://video.stackexchange.com",
     "api_site_parameter": "video",
@@ -1642,7 +1642,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/avpmeta/img/favicon.ico",
+    "favicon_url": "avpmeta/img/favicon.ico",
     "audience": "engineers, producers, editors, and enthusiasts spanning the fields of video, and media creation",
     "site_url": "http://meta.video.stackexchange.com",
     "api_site_parameter": "meta.video",
@@ -1669,7 +1669,7 @@ var sites_arr = [
     "closed_beta_date": 1294099200,
     "high_resolution_icon_url": "graphicdesign/img/apple-touch-icon@2.png",
     "twitter_account": "StackDesign",
-    "favicon_url": "//cdn.sstatic.net/Sites/graphicdesign/img/favicon.ico",
+    "favicon_url": "graphicdesign/img/favicon.ico",
     "audience": "Graphic Design professionals, students, and enthusiasts",
     "site_url": "http://graphicdesign.stackexchange.com",
     "api_site_parameter": "graphicdesign",
@@ -1692,7 +1692,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "graphicdesignmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/graphicdesignmeta/img/favicon.ico",
+    "favicon_url": "graphicdesignmeta/img/favicon.ico",
     "audience": "Graphic Design professionals, students, and enthusiasts",
     "site_url": "http://meta.graphicdesign.stackexchange.com",
     "api_site_parameter": "meta.graphicdesign",
@@ -1719,7 +1719,7 @@ var sites_arr = [
     "closed_beta_date": 1294012800,
     "high_resolution_icon_url": "dba/img/apple-touch-icon@2.png",
     "twitter_account": "StackDBAs",
-    "favicon_url": "//cdn.sstatic.net/Sites/dba/img/favicon.ico",
+    "favicon_url": "dba/img/favicon.ico",
     "audience": "database professionals who wish to improve their database skills and learn from others in the community",
     "site_url": "http://dba.stackexchange.com",
     "api_site_parameter": "dba",
@@ -1742,7 +1742,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "dbameta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/dbameta/img/favicon.ico",
+    "favicon_url": "dbameta/img/favicon.ico",
     "audience": "database professionals who wish to improve their database skills and learn from others in the community",
     "site_url": "http://meta.dba.stackexchange.com",
     "api_site_parameter": "meta.dba",
@@ -1769,7 +1769,7 @@ var sites_arr = [
     "closed_beta_date": 1294704000,
     "high_resolution_icon_url": "scifi/img/apple-touch-icon@2.png",
     "twitter_account": "StackSciFi",
-    "favicon_url": "//cdn.sstatic.net/Sites/scifi/img/favicon.ico",
+    "favicon_url": "scifi/img/favicon.ico",
     "audience": "science fiction and fantasy enthusiasts",
     "site_url": "http://scifi.stackexchange.com",
     "api_site_parameter": "scifi",
@@ -1792,7 +1792,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "scifimeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/scifimeta/img/favicon.ico",
+    "favicon_url": "scifimeta/img/favicon.ico",
     "audience": "science fiction and fantasy enthusiasts",
     "site_url": "http://meta.scifi.stackexchange.com",
     "api_site_parameter": "meta.scifi",
@@ -1817,7 +1817,7 @@ var sites_arr = [
     "open_beta_date": 1296000000,
     "closed_beta_date": 1295395200,
     "twitter_account": "StackCodeReview",
-    "favicon_url": "//cdn.sstatic.net/Sites/codereview/img/favicon.ico",
+    "favicon_url": "codereview/img/favicon.ico",
     "audience": "peer programmer code reviews",
     "site_url": "http://codereview.stackexchange.com",
     "api_site_parameter": "codereview",
@@ -1839,7 +1839,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/codereviewmeta/img/favicon.ico",
+    "favicon_url": "codereviewmeta/img/favicon.ico",
     "audience": "peer programmer code reviews",
     "site_url": "http://meta.codereview.stackexchange.com",
     "api_site_parameter": "meta.codereview",
@@ -1864,7 +1864,7 @@ var sites_arr = [
     "open_beta_date": 1296691200,
     "closed_beta_date": 1296086400,
     "twitter_account": "StackCodeGolf",
-    "favicon_url": "//cdn.sstatic.net/Sites/codegolf/img/favicon.ico",
+    "favicon_url": "codegolf/img/favicon.ico",
     "audience": "programming puzzle enthusiasts and code golfers",
     "site_url": "http://codegolf.stackexchange.com",
     "api_site_parameter": "codegolf",
@@ -1886,7 +1886,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/codegolfmeta/img/favicon.ico",
+    "favicon_url": "codegolfmeta/img/favicon.ico",
     "audience": "programming puzzle enthusiasts and code golfers",
     "site_url": "http://meta.codegolf.stackexchange.com",
     "api_site_parameter": "meta.codegolf",
@@ -1911,7 +1911,7 @@ var sites_arr = [
     "open_beta_date": 1297036800,
     "closed_beta_date": 1296432000,
     "twitter_account": "StackQuant",
-    "favicon_url": "//cdn.sstatic.net/Sites/quant/img/favicon.ico",
+    "favicon_url": "quant/img/favicon.ico",
     "audience": "finance professionals and academics",
     "site_url": "http://quant.stackexchange.com",
     "api_site_parameter": "quant",
@@ -1933,7 +1933,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/quantmeta/img/favicon.ico",
+    "favicon_url": "quantmeta/img/favicon.ico",
     "audience": "finance professionals and academics",
     "site_url": "http://meta.quant.stackexchange.com",
     "api_site_parameter": "meta.quant",
@@ -1958,7 +1958,7 @@ var sites_arr = [
     "open_beta_date": 1297641600,
     "closed_beta_date": 1297036800,
     "twitter_account": "StackProjects",
-    "favicon_url": "//cdn.sstatic.net/Sites/pm/img/favicon.ico",
+    "favicon_url": "pm/img/favicon.ico",
     "audience": "project managers",
     "site_url": "http://pm.stackexchange.com",
     "api_site_parameter": "pm",
@@ -1980,7 +1980,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/pmmeta/img/favicon.ico",
+    "favicon_url": "pmmeta/img/favicon.ico",
     "audience": "project managers",
     "site_url": "http://meta.pm.stackexchange.com",
     "api_site_parameter": "meta.pm",
@@ -2007,7 +2007,7 @@ var sites_arr = [
     "closed_beta_date": 1298505600,
     "high_resolution_icon_url": "skeptics/img/apple-touch-icon@2.png",
     "twitter_account": "StackSkeptic",
-    "favicon_url": "//cdn.sstatic.net/Sites/skeptics/img/favicon.ico",
+    "favicon_url": "skeptics/img/favicon.ico",
     "audience": "scientific skepticism",
     "site_url": "http://skeptics.stackexchange.com",
     "api_site_parameter": "skeptics",
@@ -2030,7 +2030,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "skepticsmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/skepticsmeta/img/favicon.ico",
+    "favicon_url": "skepticsmeta/img/favicon.ico",
     "audience": "scientific skepticism",
     "site_url": "http://meta.skeptics.stackexchange.com",
     "api_site_parameter": "meta.skeptics",
@@ -2055,7 +2055,7 @@ var sites_arr = [
     "open_beta_date": 1299542400,
     "closed_beta_date": 1298937600,
     "twitter_account": "StackFitness",
-    "favicon_url": "//cdn.sstatic.net/Sites/fitness/img/favicon.ico",
+    "favicon_url": "fitness/img/favicon.ico",
     "audience": "physical fitness professionals, athletes, trainers, and those providing health-related needs",
     "site_url": "http://fitness.stackexchange.com",
     "api_site_parameter": "fitness",
@@ -2077,7 +2077,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/fitnessmeta/img/favicon.ico",
+    "favicon_url": "fitnessmeta/img/favicon.ico",
     "audience": "physical fitness professionals, athletes, trainers, and those providing health-related needs",
     "site_url": "http://meta.fitness.stackexchange.com",
     "api_site_parameter": "meta.fitness",
@@ -2104,7 +2104,7 @@ var sites_arr = [
     "closed_beta_date": 1299024000,
     "high_resolution_icon_url": "drupal/img/apple-touch-icon@2.png",
     "twitter_account": "StackDrupal",
-    "favicon_url": "//cdn.sstatic.net/Sites/drupal/img/favicon.ico",
+    "favicon_url": "drupal/img/favicon.ico",
     "audience": "Drupal developers and administrators",
     "site_url": "http://drupal.stackexchange.com",
     "api_site_parameter": "drupal",
@@ -2127,7 +2127,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "drupalmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/drupalmeta/img/favicon.ico",
+    "favicon_url": "drupalmeta/img/favicon.ico",
     "audience": "Drupal developers and administrators",
     "site_url": "http://meta.drupal.stackexchange.com",
     "api_site_parameter": "meta.drupal",
@@ -2152,7 +2152,7 @@ var sites_arr = [
     "open_beta_date": 1300060800,
     "closed_beta_date": 1299456000,
     "twitter_account": "StackMechanics",
-    "favicon_url": "//cdn.sstatic.net/Sites/mechanics/img/favicon.ico",
+    "favicon_url": "mechanics/img/favicon.ico",
     "audience": "mechanics and DIY enthusiast owners of cars, trucks, and motorcycles",
     "site_url": "http://mechanics.stackexchange.com",
     "api_site_parameter": "mechanics",
@@ -2174,7 +2174,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/mechanicsmeta/img/favicon.ico",
+    "favicon_url": "mechanicsmeta/img/favicon.ico",
     "audience": "mechanics and DIY enthusiast owners of cars, trucks, and motorcycles",
     "site_url": "http://meta.mechanics.stackexchange.com",
     "api_site_parameter": "meta.mechanics",
@@ -2199,7 +2199,7 @@ var sites_arr = [
     "open_beta_date": 1301961600,
     "closed_beta_date": 1301356800,
     "twitter_account": "StackParenting",
-    "favicon_url": "//cdn.sstatic.net/Sites/parenting/img/favicon.ico",
+    "favicon_url": "parenting/img/favicon.ico",
     "audience": "parents, grandparents, nannies and others with a parenting role",
     "site_url": "http://parenting.stackexchange.com",
     "api_site_parameter": "parenting",
@@ -2221,7 +2221,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/parentingmeta/img/favicon.ico",
+    "favicon_url": "parentingmeta/img/favicon.ico",
     "audience": "parents, grandparents, nannies and others with a parenting role",
     "site_url": "http://meta.parenting.stackexchange.com",
     "api_site_parameter": "meta.parenting",
@@ -2248,7 +2248,7 @@ var sites_arr = [
     "closed_beta_date": 1302134400,
     "high_resolution_icon_url": "sharepoint/img/apple-touch-icon@2.png",
     "twitter_account": "StackSharePoint",
-    "favicon_url": "//cdn.sstatic.net/Sites/sharepoint/img/favicon.ico",
+    "favicon_url": "sharepoint/img/favicon.ico",
     "audience": "SharePoint enthusiasts",
     "site_url": "http://sharepoint.stackexchange.com",
     "api_site_parameter": "sharepoint",
@@ -2271,7 +2271,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "sharepointmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/sharepointmeta/img/favicon.ico",
+    "favicon_url": "sharepointmeta/img/favicon.ico",
     "audience": "SharePoint enthusiasts",
     "site_url": "http://meta.sharepoint.stackexchange.com",
     "api_site_parameter": "meta.sharepoint",
@@ -2296,7 +2296,7 @@ var sites_arr = [
     "open_beta_date": 1304380800,
     "closed_beta_date": 1303776000,
     "twitter_account": "StackMusic",
-    "favicon_url": "//cdn.sstatic.net/Sites/music/img/favicon.ico",
+    "favicon_url": "music/img/favicon.ico",
     "audience": "musicians, students, and enthusiasts",
     "site_url": "http://music.stackexchange.com",
     "api_site_parameter": "music",
@@ -2318,7 +2318,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/musicmeta/img/favicon.ico",
+    "favicon_url": "musicmeta/img/favicon.ico",
     "audience": "musicians, students, and enthusiasts",
     "site_url": "http://meta.music.stackexchange.com",
     "api_site_parameter": "meta.music",
@@ -2343,7 +2343,7 @@ var sites_arr = [
     "open_beta_date": 1304985600,
     "closed_beta_date": 1304380800,
     "twitter_account": "StackSQA",
-    "favicon_url": "//cdn.sstatic.net/Sites/sqa/img/favicon.ico",
+    "favicon_url": "sqa/img/favicon.ico",
     "audience": "software quality control experts, automation engineers, and software testers",
     "site_url": "http://sqa.stackexchange.com",
     "api_site_parameter": "sqa",
@@ -2365,7 +2365,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/sqameta/img/favicon.ico",
+    "favicon_url": "sqameta/img/favicon.ico",
     "audience": "software quality control experts, automation engineers, and software testers",
     "site_url": "http://meta.sqa.stackexchange.com",
     "api_site_parameter": "meta.sqa",
@@ -2392,7 +2392,7 @@ var sites_arr = [
     "closed_beta_date": 1304985600,
     "high_resolution_icon_url": "judaism/img/apple-touch-icon@2.png",
     "twitter_account": "StackJudaism",
-    "favicon_url": "//cdn.sstatic.net/Sites/judaism/img/favicon.ico",
+    "favicon_url": "judaism/img/favicon.ico",
     "audience": "those who base their lives on Jewish law and tradition and anyone interested in learning more",
     "site_url": "http://judaism.stackexchange.com",
     "api_site_parameter": "judaism",
@@ -2415,7 +2415,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "judaismmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/judaismmeta/img/favicon.ico",
+    "favicon_url": "judaismmeta/img/favicon.ico",
     "audience": "those who base their lives on Jewish law and tradition and anyone interested in learning more",
     "site_url": "http://meta.judaism.stackexchange.com",
     "api_site_parameter": "meta.judaism",
@@ -2440,7 +2440,7 @@ var sites_arr = [
     "open_beta_date": 1306800000,
     "closed_beta_date": 1306195200,
     "twitter_account": "StackGerman",
-    "favicon_url": "//cdn.sstatic.net/Sites/german/img/favicon.ico",
+    "favicon_url": "german/img/favicon.ico",
     "audience": "speakers of German wanting to discuss the finer points of the language and translation",
     "site_url": "http://german.stackexchange.com",
     "api_site_parameter": "german",
@@ -2462,7 +2462,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/germanmeta/img/favicon.ico",
+    "favicon_url": "germanmeta/img/favicon.ico",
     "audience": "speakers of German wanting to discuss the finer points of the language and translation",
     "site_url": "http://meta.german.stackexchange.com",
     "api_site_parameter": "meta.german",
@@ -2487,7 +2487,7 @@ var sites_arr = [
     "open_beta_date": 1307404800,
     "closed_beta_date": 1306800000,
     "twitter_account": "StackJapanese",
-    "favicon_url": "//cdn.sstatic.net/Sites/japanese/img/favicon.ico",
+    "favicon_url": "japanese/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Japanese language",
     "site_url": "http://japanese.stackexchange.com",
     "api_site_parameter": "japanese",
@@ -2509,7 +2509,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/japanesemeta/img/favicon.ico",
+    "favicon_url": "japanesemeta/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Japanese language",
     "site_url": "http://meta.japanese.stackexchange.com",
     "api_site_parameter": "meta.japanese",
@@ -2534,7 +2534,7 @@ var sites_arr = [
     "open_beta_date": 1308096000,
     "closed_beta_date": 1307404800,
     "twitter_account": "StackPhilosophy",
-    "favicon_url": "//cdn.sstatic.net/Sites/philosophy/img/favicon.ico",
+    "favicon_url": "philosophy/img/favicon.ico",
     "audience": "those interested in logical reasoning",
     "site_url": "http://philosophy.stackexchange.com",
     "api_site_parameter": "philosophy",
@@ -2556,7 +2556,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/philosophymeta/img/favicon.ico",
+    "favicon_url": "philosophymeta/img/favicon.ico",
     "audience": "those interested in logical reasoning",
     "site_url": "http://meta.philosophy.stackexchange.com",
     "api_site_parameter": "meta.philosophy",
@@ -2581,7 +2581,7 @@ var sites_arr = [
     "open_beta_date": 1308096000,
     "closed_beta_date": 1307491200,
     "twitter_account": "StackGardening",
-    "favicon_url": "//cdn.sstatic.net/Sites/gardening/img/favicon.ico",
+    "favicon_url": "gardening/img/favicon.ico",
     "audience": "gardeners and landscapers",
     "site_url": "http://gardening.stackexchange.com",
     "api_site_parameter": "gardening",
@@ -2603,7 +2603,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/gardeningmeta/img/favicon.ico",
+    "favicon_url": "gardeningmeta/img/favicon.ico",
     "audience": "gardeners and landscapers",
     "site_url": "http://meta.gardening.stackexchange.com",
     "api_site_parameter": "meta.gardening",
@@ -2630,7 +2630,7 @@ var sites_arr = [
     "closed_beta_date": 1308614400,
     "high_resolution_icon_url": "travel/img/apple-touch-icon@2.png",
     "twitter_account": "StackTravel",
-    "favicon_url": "//cdn.sstatic.net/Sites/travel/img/favicon.ico",
+    "favicon_url": "travel/img/favicon.ico",
     "audience": "road warriors and seasoned travelers",
     "site_url": "http://travel.stackexchange.com",
     "api_site_parameter": "travel",
@@ -2653,7 +2653,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "travelmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/travelmeta/img/favicon.ico",
+    "favicon_url": "travelmeta/img/favicon.ico",
     "audience": "road warriors and seasoned travelers",
     "site_url": "http://meta.travel.stackexchange.com",
     "api_site_parameter": "meta.travel",
@@ -2678,7 +2678,7 @@ var sites_arr = [
     "open_beta_date": 1309305600,
     "closed_beta_date": 1308700800,
     "twitter_account": "StackProd",
-    "favicon_url": "//cdn.sstatic.net/Sites/productivity/img/favicon.ico",
+    "favicon_url": "productivity/img/favicon.ico",
     "audience": "people wanting to improve their personal productivity",
     "site_url": "http://productivity.stackexchange.com",
     "api_site_parameter": "productivity",
@@ -2700,7 +2700,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/productivitymeta/img/favicon.ico",
+    "favicon_url": "productivitymeta/img/favicon.ico",
     "audience": "people wanting to improve their personal productivity",
     "site_url": "http://meta.productivity.stackexchange.com",
     "api_site_parameter": "meta.productivity",
@@ -2725,7 +2725,7 @@ var sites_arr = [
     "open_beta_date": 1312243200,
     "closed_beta_date": 1310428800,
     "twitter_account": "StackCrypto",
-    "favicon_url": "//cdn.sstatic.net/Sites/crypto/img/favicon.ico",
+    "favicon_url": "crypto/img/favicon.ico",
     "audience": "software developers, mathematicians and others interested in cryptography",
     "site_url": "http://crypto.stackexchange.com",
     "api_site_parameter": "crypto",
@@ -2747,7 +2747,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/cryptometa/img/favicon.ico",
+    "favicon_url": "cryptometa/img/favicon.ico",
     "audience": "software developers, mathematicians and others interested in cryptography",
     "site_url": "http://meta.crypto.stackexchange.com",
     "api_site_parameter": "meta.crypto",
@@ -2772,7 +2772,7 @@ var sites_arr = [
     "open_beta_date": 1315267200,
     "closed_beta_date": 1313452800,
     "twitter_account": "StackSignals",
-    "favicon_url": "//cdn.sstatic.net/Sites/dsp/img/favicon.ico",
+    "favicon_url": "dsp/img/favicon.ico",
     "audience": "practitioners of the art and science of signal, image and video processing",
     "site_url": "http://dsp.stackexchange.com",
     "api_site_parameter": "dsp",
@@ -2794,7 +2794,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/dspmeta/img/favicon.ico",
+    "favicon_url": "dspmeta/img/favicon.ico",
     "audience": "practitioners of the art and science of signal, image and video processing",
     "site_url": "http://meta.dsp.stackexchange.com",
     "api_site_parameter": "meta.dsp",
@@ -2819,7 +2819,7 @@ var sites_arr = [
     "open_beta_date": 1314144000,
     "closed_beta_date": 1313539200,
     "twitter_account": "StackFrench",
-    "favicon_url": "//cdn.sstatic.net/Sites/french/img/favicon.ico",
+    "favicon_url": "french/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the French language",
     "site_url": "http://french.stackexchange.com",
     "api_site_parameter": "french",
@@ -2841,7 +2841,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/frenchmeta/img/favicon.ico",
+    "favicon_url": "frenchmeta/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the French language",
     "site_url": "http://meta.french.stackexchange.com",
     "api_site_parameter": "meta.french",
@@ -2868,7 +2868,7 @@ var sites_arr = [
     "closed_beta_date": 1314057600,
     "high_resolution_icon_url": "christianity/img/apple-touch-icon@2.png",
     "twitter_account": "StackChristian",
-    "favicon_url": "//cdn.sstatic.net/Sites/christianity/img/favicon.ico",
+    "favicon_url": "christianity/img/favicon.ico",
     "audience": "committed Christians, experts in Christianity and those interested in learning more",
     "site_url": "http://christianity.stackexchange.com",
     "api_site_parameter": "christianity",
@@ -2891,7 +2891,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "christianitymeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/christianitymeta/img/favicon.ico",
+    "favicon_url": "christianitymeta/img/favicon.ico",
     "audience": "committed Christians, experts in Christianity and those interested in learning more",
     "site_url": "http://meta.christianity.stackexchange.com",
     "api_site_parameter": "meta.christianity",
@@ -2916,7 +2916,7 @@ var sites_arr = [
     "open_beta_date": 1315353600,
     "closed_beta_date": 1314662400,
     "twitter_account": "StackBitcoin",
-    "favicon_url": "//cdn.sstatic.net/Sites/bitcoin/img/favicon.ico",
+    "favicon_url": "bitcoin/img/favicon.ico",
     "audience": "Bitcoin crypto-currency enthusiasts",
     "site_url": "http://bitcoin.stackexchange.com",
     "api_site_parameter": "bitcoin",
@@ -2938,7 +2938,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/bitcoinmeta/img/favicon.ico",
+    "favicon_url": "bitcoinmeta/img/favicon.ico",
     "audience": "Bitcoin crypto-currency enthusiasts",
     "site_url": "http://meta.bitcoin.stackexchange.com",
     "api_site_parameter": "meta.bitcoin",
@@ -2963,7 +2963,7 @@ var sites_arr = [
     "open_beta_date": 1316476800,
     "closed_beta_date": 1315872000,
     "twitter_account": "StackLinguist",
-    "favicon_url": "//cdn.sstatic.net/Sites/linguistics/img/favicon.ico",
+    "favicon_url": "linguistics/img/favicon.ico",
     "audience": "professional linguists and others with an interest in linguistic research and theory",
     "site_url": "http://linguistics.stackexchange.com",
     "api_site_parameter": "linguistics",
@@ -2985,7 +2985,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/linguisticsmeta/img/favicon.ico",
+    "favicon_url": "linguisticsmeta/img/favicon.ico",
     "audience": "professional linguists and others with an interest in linguistic research and theory",
     "site_url": "http://meta.linguistics.stackexchange.com",
     "api_site_parameter": "meta.linguistics",
@@ -3010,7 +3010,7 @@ var sites_arr = [
     "open_beta_date": 1318291200,
     "closed_beta_date": 1317686400,
     "twitter_account": "StackBibleHerm",
-    "favicon_url": "//cdn.sstatic.net/Sites/hermeneutics/img/favicon.ico",
+    "favicon_url": "hermeneutics/img/favicon.ico",
     "audience": "professors, theologians, and those interested in exegetical analysis of biblical texts",
     "site_url": "http://hermeneutics.stackexchange.com",
     "api_site_parameter": "hermeneutics",
@@ -3032,7 +3032,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/hermeneuticsmeta/img/favicon.ico",
+    "favicon_url": "hermeneuticsmeta/img/favicon.ico",
     "audience": "professors, theologians, and those interested in exegetical analysis of biblical texts",
     "site_url": "http://meta.hermeneutics.stackexchange.com",
     "api_site_parameter": "meta.hermeneutics",
@@ -3057,7 +3057,7 @@ var sites_arr = [
     "open_beta_date": 1319500800,
     "closed_beta_date": 1318291200,
     "twitter_account": "StackHistory",
-    "favicon_url": "//cdn.sstatic.net/Sites/history/img/favicon.ico",
+    "favicon_url": "history/img/favicon.ico",
     "audience": "historians and history buffs",
     "site_url": "http://history.stackexchange.com",
     "api_site_parameter": "history",
@@ -3079,7 +3079,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/historymeta/img/favicon.ico",
+    "favicon_url": "historymeta/img/favicon.ico",
     "audience": "historians and history buffs",
     "site_url": "http://meta.history.stackexchange.com",
     "api_site_parameter": "meta.history",
@@ -3104,7 +3104,7 @@ var sites_arr = [
     "open_beta_date": 1320105600,
     "closed_beta_date": 1319500800,
     "twitter_account": "StackBrix",
-    "favicon_url": "//cdn.sstatic.net/Sites/bricks/img/favicon.ico",
+    "favicon_url": "bricks/img/favicon.ico",
     "audience": "LEGO&#174; and building block enthusiasts",
     "site_url": "http://bricks.stackexchange.com",
     "api_site_parameter": "bricks",
@@ -3126,7 +3126,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/bricksmeta/img/favicon.ico",
+    "favicon_url": "bricksmeta/img/favicon.ico",
     "audience": "LEGO&#174; and building block enthusiasts",
     "site_url": "http://meta.bricks.stackexchange.com",
     "api_site_parameter": "meta.bricks",
@@ -3151,7 +3151,7 @@ var sites_arr = [
     "open_beta_date": 1321920000,
     "closed_beta_date": 1321315200,
     "twitter_account": "StackSpanish",
-    "favicon_url": "//cdn.sstatic.net/Sites/spanish/img/favicon.ico",
+    "favicon_url": "spanish/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Spanish language",
     "site_url": "http://spanish.stackexchange.com",
     "api_site_parameter": "spanish",
@@ -3173,7 +3173,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/spanishmeta/img/favicon.ico",
+    "favicon_url": "spanishmeta/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Spanish language",
     "site_url": "http://meta.spanish.stackexchange.com",
     "api_site_parameter": "meta.spanish",
@@ -3198,7 +3198,7 @@ var sites_arr = [
     "open_beta_date": 1323129600,
     "closed_beta_date": 1322524800,
     "twitter_account": "StackSciComp",
-    "favicon_url": "//cdn.sstatic.net/Sites/scicomp/img/favicon.ico",
+    "favicon_url": "scicomp/img/favicon.ico",
     "audience": "scientists using computers to solve scientific problems",
     "site_url": "http://scicomp.stackexchange.com",
     "api_site_parameter": "scicomp",
@@ -3220,7 +3220,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/scicompmeta/img/favicon.ico",
+    "favicon_url": "scicompmeta/img/favicon.ico",
     "audience": "scientists using computers to solve scientific problems",
     "site_url": "http://meta.scicomp.stackexchange.com",
     "api_site_parameter": "meta.scicomp",
@@ -3245,7 +3245,7 @@ var sites_arr = [
     "open_beta_date": 1323216000,
     "closed_beta_date": 1322611200,
     "twitter_account": "StackMovies",
-    "favicon_url": "//cdn.sstatic.net/Sites/movies/img/favicon.ico",
+    "favicon_url": "movies/img/favicon.ico",
     "audience": "movie and tv enthusiasts",
     "site_url": "http://movies.stackexchange.com",
     "api_site_parameter": "movies",
@@ -3267,7 +3267,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/moviesmeta/img/favicon.ico",
+    "favicon_url": "moviesmeta/img/favicon.ico",
     "audience": "movie and tv enthusiasts",
     "site_url": "http://meta.movies.stackexchange.com",
     "api_site_parameter": "meta.movies",
@@ -3292,7 +3292,7 @@ var sites_arr = [
     "open_beta_date": 1324425600,
     "closed_beta_date": 1323734400,
     "twitter_account": "StackChinese",
-    "favicon_url": "//cdn.sstatic.net/Sites/chinese/img/favicon.ico",
+    "favicon_url": "chinese/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Chinese language",
     "site_url": "http://chinese.stackexchange.com",
     "api_site_parameter": "chinese",
@@ -3314,7 +3314,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/chinesemeta/img/favicon.ico",
+    "favicon_url": "chinesemeta/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Chinese language",
     "site_url": "http://meta.chinese.stackexchange.com",
     "api_site_parameter": "meta.chinese",
@@ -3339,7 +3339,7 @@ var sites_arr = [
     "open_beta_date": 1324425600,
     "closed_beta_date": 1323820800,
     "twitter_account": "StackBiology",
-    "favicon_url": "//cdn.sstatic.net/Sites/biology/img/favicon.ico",
+    "favicon_url": "biology/img/favicon.ico",
     "audience": "biology researchers, academics, and students",
     "site_url": "http://biology.stackexchange.com",
     "api_site_parameter": "biology",
@@ -3361,7 +3361,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/biologymeta/img/favicon.ico",
+    "favicon_url": "biologymeta/img/favicon.ico",
     "audience": "biology researchers, academics, and students",
     "site_url": "http://meta.biology.stackexchange.com",
     "api_site_parameter": "meta.biology",
@@ -3386,7 +3386,7 @@ var sites_arr = [
     "open_beta_date": 1327363200,
     "closed_beta_date": 1326153600,
     "twitter_account": "StackPoker",
-    "favicon_url": "//cdn.sstatic.net/Sites/poker/img/favicon.ico",
+    "favicon_url": "poker/img/favicon.ico",
     "audience": "serious players and enthusiasts of poker",
     "site_url": "http://poker.stackexchange.com",
     "api_site_parameter": "poker",
@@ -3408,7 +3408,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/pokermeta/img/favicon.ico",
+    "favicon_url": "pokermeta/img/favicon.ico",
     "audience": "serious players and enthusiasts of poker",
     "site_url": "http://meta.poker.stackexchange.com",
     "api_site_parameter": "meta.poker",
@@ -3435,7 +3435,7 @@ var sites_arr = [
     "closed_beta_date": 1326758400,
     "high_resolution_icon_url": "mathematica/img/apple-touch-icon@2.png",
     "twitter_account": "StackMma",
-    "favicon_url": "//cdn.sstatic.net/Sites/mathematica/img/favicon.ico",
+    "favicon_url": "mathematica/img/favicon.ico",
     "audience": "users of Mathematica",
     "site_url": "http://mathematica.stackexchange.com",
     "api_site_parameter": "mathematica",
@@ -3458,7 +3458,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "mathematicameta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/mathematicameta/img/favicon.ico",
+    "favicon_url": "mathematicameta/img/favicon.ico",
     "audience": "users of Mathematica",
     "site_url": "http://meta.mathematica.stackexchange.com",
     "api_site_parameter": "meta.mathematica",
@@ -3483,7 +3483,7 @@ var sites_arr = [
     "open_beta_date": 1327449600,
     "closed_beta_date": 1326844800,
     "twitter_account": "StackCogSci",
-    "favicon_url": "//cdn.sstatic.net/Sites/cogsci/img/favicon.ico",
+    "favicon_url": "cogsci/img/favicon.ico",
     "audience": "practitioners, researchers, and students in cognitive science, psychology, neuroscience, and psychiatry",
     "site_url": "http://cogsci.stackexchange.com",
     "api_site_parameter": "cogsci",
@@ -3505,7 +3505,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/cogscimeta/img/favicon.ico",
+    "favicon_url": "cogscimeta/img/favicon.ico",
     "audience": "practitioners, researchers, and students in cognitive science, psychology, neuroscience, and psychiatry",
     "site_url": "http://meta.cogsci.stackexchange.com",
     "api_site_parameter": "meta.cogsci",
@@ -3530,7 +3530,7 @@ var sites_arr = [
     "open_beta_date": 1327968000,
     "closed_beta_date": 1327363200,
     "twitter_account": "StackOutdoors",
-    "favicon_url": "//cdn.sstatic.net/Sites/outdoors/img/favicon.ico",
+    "favicon_url": "outdoors/img/favicon.ico",
     "audience": "people who love outdoor activities, excursions, and outdoorsmanship",
     "site_url": "http://outdoors.stackexchange.com",
     "api_site_parameter": "outdoors",
@@ -3552,7 +3552,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/outdoorsmeta/img/favicon.ico",
+    "favicon_url": "outdoorsmeta/img/favicon.ico",
     "audience": "people who love outdoor activities, excursions, and outdoorsmanship",
     "site_url": "http://meta.outdoors.stackexchange.com",
     "api_site_parameter": "meta.outdoors",
@@ -3577,7 +3577,7 @@ var sites_arr = [
     "open_beta_date": 1328572800,
     "closed_beta_date": 1327968000,
     "twitter_account": "StackMartialArt",
-    "favicon_url": "//cdn.sstatic.net/Sites/martialarts/img/favicon.ico",
+    "favicon_url": "martialarts/img/favicon.ico",
     "audience": "students and teachers of all martial arts",
     "site_url": "http://martialarts.stackexchange.com",
     "api_site_parameter": "martialarts",
@@ -3599,7 +3599,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/martialartsmeta/img/favicon.ico",
+    "favicon_url": "martialartsmeta/img/favicon.ico",
     "audience": "students and teachers of all martial arts",
     "site_url": "http://meta.martialarts.stackexchange.com",
     "api_site_parameter": "meta.martialarts",
@@ -3624,7 +3624,7 @@ var sites_arr = [
     "open_beta_date": 1329264000,
     "closed_beta_date": 1328659200,
     "twitter_account": "StackSport",
-    "favicon_url": "//cdn.sstatic.net/Sites/sports/img/favicon.ico",
+    "favicon_url": "sports/img/favicon.ico",
     "audience": "participants in team and individual sport activities",
     "site_url": "http://sports.stackexchange.com",
     "api_site_parameter": "sports",
@@ -3646,7 +3646,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/sportsmeta/img/favicon.ico",
+    "favicon_url": "sportsmeta/img/favicon.ico",
     "audience": "participants in team and individual sport activities",
     "site_url": "http://meta.sports.stackexchange.com",
     "api_site_parameter": "meta.sports",
@@ -3673,7 +3673,7 @@ var sites_arr = [
     "closed_beta_date": 1329177600,
     "high_resolution_icon_url": "academia/img/apple-touch-icon@2.png",
     "twitter_account": "StackAcademia",
-    "favicon_url": "//cdn.sstatic.net/Sites/academia/img/favicon.ico",
+    "favicon_url": "academia/img/favicon.ico",
     "audience": "academics and those enrolled in higher education",
     "site_url": "http://academia.stackexchange.com",
     "api_site_parameter": "academia",
@@ -3696,7 +3696,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "academiameta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/academiameta/img/favicon.ico",
+    "favicon_url": "academiameta/img/favicon.ico",
     "audience": "academics and those enrolled in higher education",
     "site_url": "http://meta.academia.stackexchange.com",
     "api_site_parameter": "meta.academia",
@@ -3721,7 +3721,7 @@ var sites_arr = [
     "open_beta_date": 1332201600,
     "closed_beta_date": 1330992000,
     "twitter_account": "StackCompSci",
-    "favicon_url": "//cdn.sstatic.net/Sites/cs/img/favicon.ico",
+    "favicon_url": "cs/img/favicon.ico",
     "audience": "students, researchers and practitioners of computer science",
     "site_url": "http://cs.stackexchange.com",
     "api_site_parameter": "cs",
@@ -3743,7 +3743,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/csmeta/img/favicon.ico",
+    "favicon_url": "csmeta/img/favicon.ico",
     "audience": "students, researchers and practitioners of computer science",
     "site_url": "http://meta.cs.stackexchange.com",
     "api_site_parameter": "meta.cs",
@@ -3770,7 +3770,7 @@ var sites_arr = [
     "closed_beta_date": 1334016000,
     "high_resolution_icon_url": "workplace/img/apple-touch-icon@2.png",
     "twitter_account": "StackWorkplace",
-    "favicon_url": "//cdn.sstatic.net/Sites/workplace/img/favicon.ico",
+    "favicon_url": "workplace/img/favicon.ico",
     "audience": "members of the workforce navigating the professional setting",
     "site_url": "http://workplace.stackexchange.com",
     "api_site_parameter": "workplace",
@@ -3793,7 +3793,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "workplacemeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/workplacemeta/img/favicon.ico",
+    "favicon_url": "workplacemeta/img/favicon.ico",
     "audience": "members of the workforce navigating the professional setting",
     "site_url": "http://meta.workplace.stackexchange.com",
     "api_site_parameter": "meta.workplace",
@@ -3818,7 +3818,7 @@ var sites_arr = [
     "open_beta_date": 1335830400,
     "closed_beta_date": 1335225600,
     "twitter_account": "StackWinPhone",
-    "favicon_url": "//cdn.sstatic.net/Sites/windowsphone/img/favicon.ico",
+    "favicon_url": "windowsphone/img/favicon.ico",
     "audience": "enthusiasts and power users of Windows Phone OS",
     "site_url": "http://windowsphone.stackexchange.com",
     "api_site_parameter": "windowsphone",
@@ -3840,7 +3840,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/windowsphonemeta/img/favicon.ico",
+    "favicon_url": "windowsphonemeta/img/favicon.ico",
     "audience": "enthusiasts and power users of Windows Phone OS",
     "site_url": "http://meta.windowsphone.stackexchange.com",
     "api_site_parameter": "meta.windowsphone",
@@ -3865,7 +3865,7 @@ var sites_arr = [
     "open_beta_date": 1336435200,
     "closed_beta_date": 1335312000,
     "twitter_account": "StackChemistry",
-    "favicon_url": "//cdn.sstatic.net/Sites/chemistry/img/favicon.ico",
+    "favicon_url": "chemistry/img/favicon.ico",
     "audience": "scientists, academics, teachers and students",
     "site_url": "http://chemistry.stackexchange.com",
     "api_site_parameter": "chemistry",
@@ -3887,7 +3887,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/chemistrymeta/img/favicon.ico",
+    "favicon_url": "chemistrymeta/img/favicon.ico",
     "audience": "scientists, academics, teachers and students",
     "site_url": "http://meta.chemistry.stackexchange.com",
     "api_site_parameter": "meta.chemistry",
@@ -3912,7 +3912,7 @@ var sites_arr = [
     "open_beta_date": 1337040000,
     "closed_beta_date": 1335830400,
     "twitter_account": "StackChess",
-    "favicon_url": "//cdn.sstatic.net/Sites/chess/img/favicon.ico",
+    "favicon_url": "chess/img/favicon.ico",
     "audience": "serious players and enthusiasts of chess",
     "site_url": "http://chess.stackexchange.com",
     "api_site_parameter": "chess",
@@ -3934,7 +3934,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/chessmeta/img/favicon.ico",
+    "favicon_url": "chessmeta/img/favicon.ico",
     "audience": "serious players and enthusiasts of chess",
     "site_url": "http://meta.chess.stackexchange.com",
     "api_site_parameter": "meta.chess",
@@ -3959,7 +3959,7 @@ var sites_arr = [
     "open_beta_date": 1340064000,
     "closed_beta_date": 1339459200,
     "twitter_account": "StackRaspi",
-    "favicon_url": "//cdn.sstatic.net/Sites/raspberrypi/img/favicon.ico",
+    "favicon_url": "raspberrypi/img/favicon.ico",
     "audience": "users and developers of hardware and software for Raspberry Pi",
     "site_url": "http://raspberrypi.stackexchange.com",
     "api_site_parameter": "raspberrypi",
@@ -3981,7 +3981,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/raspberrypimeta/img/favicon.ico",
+    "favicon_url": "raspberrypimeta/img/favicon.ico",
     "audience": "users and developers of hardware and software for Raspberry Pi",
     "site_url": "http://meta.raspberrypi.stackexchange.com",
     "api_site_parameter": "meta.raspberrypi",
@@ -4006,7 +4006,7 @@ var sites_arr = [
     "open_beta_date": 1340668800,
     "closed_beta_date": 1339545600,
     "twitter_account": "StackRussian",
-    "favicon_url": "//cdn.sstatic.net/Sites/russian/img/favicon.ico",
+    "favicon_url": "russian/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Russian language",
     "site_url": "http://russian.stackexchange.com",
     "api_site_parameter": "russian",
@@ -4028,7 +4028,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/russianmeta/img/favicon.ico",
+    "favicon_url": "russianmeta/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Russian language",
     "site_url": "http://meta.russian.stackexchange.com",
     "api_site_parameter": "meta.russian",
@@ -4053,7 +4053,7 @@ var sites_arr = [
     "open_beta_date": 1340668800,
     "closed_beta_date": 1340064000,
     "twitter_account": "StackIslam",
-    "favicon_url": "//cdn.sstatic.net/Sites/islam/img/favicon.ico",
+    "favicon_url": "islam/img/favicon.ico",
     "audience": "Muslims, experts in Islam, and those interested in learning more about Islam",
     "site_url": "http://islam.stackexchange.com",
     "api_site_parameter": "islam",
@@ -4075,7 +4075,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/islammeta/img/favicon.ico",
+    "favicon_url": "islammeta/img/favicon.ico",
     "audience": "Muslims, experts in Islam, and those interested in learning more about Islam",
     "site_url": "http://meta.islam.stackexchange.com",
     "api_site_parameter": "meta.islam",
@@ -4102,7 +4102,7 @@ var sites_arr = [
     "closed_beta_date": 1343692800,
     "high_resolution_icon_url": "salesforce/img/apple-touch-icon@2.png",
     "twitter_account": "StackSalesforce",
-    "favicon_url": "//cdn.sstatic.net/Sites/salesforce/img/favicon.ico",
+    "favicon_url": "salesforce/img/favicon.ico",
     "audience": "Salesforce administrators, implementation experts, developers and anybody in-between",
     "site_url": "http://salesforce.stackexchange.com",
     "api_site_parameter": "salesforce",
@@ -4125,7 +4125,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "salesforcemeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/salesforcemeta/img/favicon.ico",
+    "favicon_url": "salesforcemeta/img/favicon.ico",
     "audience": "Salesforce administrators, implementation experts, developers and anybody in-between",
     "site_url": "http://meta.salesforce.stackexchange.com",
     "api_site_parameter": "meta.salesforce",
@@ -4148,7 +4148,7 @@ var sites_arr = [
       }
     ],
     "launch_date": 1348099200,
-    "favicon_url": "//cdn.sstatic.net/Sites/patents/img/favicon.ico",
+    "favicon_url": "patents/img/favicon.ico",
     "audience": "people interested in improving and participating in the patent system",
     "site_url": "http://patents.stackexchange.com",
     "api_site_parameter": "patents",
@@ -4170,7 +4170,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/patentsmeta/img/favicon.ico",
+    "favicon_url": "patentsmeta/img/favicon.ico",
     "audience": "people interested in improving and participating in the patent system",
     "site_url": "http://meta.patents.stackexchange.com",
     "api_site_parameter": "meta.patents",
@@ -4195,7 +4195,7 @@ var sites_arr = [
     "open_beta_date": 1350345600,
     "closed_beta_date": 1349740800,
     "twitter_account": "StackGenealogy",
-    "favicon_url": "//cdn.sstatic.net/Sites/genealogy/img/favicon.ico",
+    "favicon_url": "genealogy/img/favicon.ico",
     "audience": "expert genealogists and people interested in genealogy or family history",
     "site_url": "http://genealogy.stackexchange.com",
     "api_site_parameter": "genealogy",
@@ -4217,7 +4217,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/genealogymeta/img/favicon.ico",
+    "favicon_url": "genealogymeta/img/favicon.ico",
     "audience": "expert genealogists and people interested in genealogy or family history",
     "site_url": "http://meta.genealogy.stackexchange.com",
     "api_site_parameter": "meta.genealogy",
@@ -4242,7 +4242,7 @@ var sites_arr = [
     "open_beta_date": 1352160000,
     "closed_beta_date": 1350950400,
     "twitter_account": "StackRobotics",
-    "favicon_url": "//cdn.sstatic.net/Sites/robotics/img/favicon.ico",
+    "favicon_url": "robotics/img/favicon.ico",
     "audience": "professional robotic engineers, hobbyists, researchers and students",
     "site_url": "http://robotics.stackexchange.com",
     "api_site_parameter": "robotics",
@@ -4264,7 +4264,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/roboticsmeta/img/favicon.ico",
+    "favicon_url": "roboticsmeta/img/favicon.ico",
     "audience": "professional robotic engineers, hobbyists, researchers and students",
     "site_url": "http://meta.robotics.stackexchange.com",
     "api_site_parameter": "meta.robotics",
@@ -4289,7 +4289,7 @@ var sites_arr = [
     "open_beta_date": 1353974400,
     "closed_beta_date": 1352937600,
     "twitter_account": "StackExpression",
-    "favicon_url": "//cdn.sstatic.net/Sites/expressionengine/img/favicon.ico",
+    "favicon_url": "expressionengine/img/favicon.ico",
     "audience": "administrators, end users, developers and designers for ExpressionEngine&#174; CMS",
     "site_url": "http://expressionengine.stackexchange.com",
     "api_site_parameter": "expressionengine",
@@ -4311,7 +4311,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/expressionenginemeta/img/favicon.ico",
+    "favicon_url": "expressionenginemeta/img/favicon.ico",
     "audience": "administrators, end users, developers and designers for ExpressionEngine&#174; CMS",
     "site_url": "http://meta.expressionengine.stackexchange.com",
     "api_site_parameter": "meta.expressionengine",
@@ -4336,7 +4336,7 @@ var sites_arr = [
     "open_beta_date": 1355788800,
     "closed_beta_date": 1354579200,
     "twitter_account": "StackPolitics",
-    "favicon_url": "//cdn.sstatic.net/Sites/politics/img/favicon.ico",
+    "favicon_url": "politics/img/favicon.ico",
     "audience": "people interested in governments, policies, and political processes",
     "site_url": "http://politics.stackexchange.com",
     "api_site_parameter": "politics",
@@ -4358,7 +4358,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/politicsmeta/img/favicon.ico",
+    "favicon_url": "politicsmeta/img/favicon.ico",
     "audience": "people interested in governments, policies, and political processes",
     "site_url": "http://meta.politics.stackexchange.com",
     "api_site_parameter": "meta.politics",
@@ -4383,7 +4383,7 @@ var sites_arr = [
     "open_beta_date": 1355788800,
     "closed_beta_date": 1355184000,
     "twitter_account": "StackAnime",
-    "favicon_url": "//cdn.sstatic.net/Sites/anime/img/favicon.ico",
+    "favicon_url": "anime/img/favicon.ico",
     "audience": "anime and manga fans",
     "site_url": "http://anime.stackexchange.com",
     "api_site_parameter": "anime",
@@ -4405,7 +4405,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/animemeta/img/favicon.ico",
+    "favicon_url": "animemeta/img/favicon.ico",
     "audience": "anime and manga fans",
     "site_url": "http://meta.anime.stackexchange.com",
     "api_site_parameter": "meta.anime",
@@ -4430,7 +4430,7 @@ var sites_arr = [
     "open_beta_date": 1359417600,
     "closed_beta_date": 1358812800,
     "twitter_account": "StackMagento",
-    "favicon_url": "//cdn.sstatic.net/Sites/magento/img/favicon.ico",
+    "favicon_url": "magento/img/favicon.ico",
     "audience": "users of the Magento e-Commerce platform",
     "site_url": "http://magento.stackexchange.com",
     "api_site_parameter": "magento",
@@ -4452,7 +4452,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/magentometa/img/favicon.ico",
+    "favicon_url": "magentometa/img/favicon.ico",
     "audience": "users of the Magento e-Commerce platform",
     "site_url": "http://meta.magento.stackexchange.com",
     "api_site_parameter": "meta.magento",
@@ -4477,7 +4477,7 @@ var sites_arr = [
     "open_beta_date": 1359504000,
     "closed_beta_date": 1358899200,
     "twitter_account": "StackEnglishLL",
-    "favicon_url": "//cdn.sstatic.net/Sites/ell/img/favicon.ico",
+    "favicon_url": "ell/img/favicon.ico",
     "audience": "speakers of other languages learning English",
     "site_url": "http://ell.stackexchange.com",
     "api_site_parameter": "ell",
@@ -4499,7 +4499,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/ellmeta/img/favicon.ico",
+    "favicon_url": "ellmeta/img/favicon.ico",
     "audience": "speakers of other languages learning English",
     "site_url": "http://meta.ell.stackexchange.com",
     "api_site_parameter": "meta.ell",
@@ -4524,7 +4524,7 @@ var sites_arr = [
     "open_beta_date": 1360022400,
     "closed_beta_date": 1359417600,
     "twitter_account": "StackSustain",
-    "favicon_url": "//cdn.sstatic.net/Sites/sustainability/img/favicon.ico",
+    "favicon_url": "sustainability/img/favicon.ico",
     "audience": "folks dedicated to a lifestyle that can be maintained indefinitely without depleting available resources",
     "site_url": "http://sustainability.stackexchange.com",
     "api_site_parameter": "sustainability",
@@ -4546,7 +4546,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/sustainabilitymeta/img/favicon.ico",
+    "favicon_url": "sustainabilitymeta/img/favicon.ico",
     "audience": "folks dedicated to a lifestyle that can be maintained indefinitely without depleting available resources",
     "site_url": "http://meta.sustainability.stackexchange.com",
     "api_site_parameter": "meta.sustainability",
@@ -4571,7 +4571,7 @@ var sites_arr = [
     "open_beta_date": 1363046400,
     "closed_beta_date": 1361232000,
     "twitter_account": "StackTridion",
-    "favicon_url": "//cdn.sstatic.net/Sites/tridion/img/favicon.ico",
+    "favicon_url": "tridion/img/favicon.ico",
     "audience": "Tridion developers and administrators",
     "site_url": "http://tridion.stackexchange.com",
     "api_site_parameter": "tridion",
@@ -4593,7 +4593,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/tridionmeta/img/favicon.ico",
+    "favicon_url": "tridionmeta/img/favicon.ico",
     "audience": "Tridion developers and administrators",
     "site_url": "http://meta.tridion.stackexchange.com",
     "api_site_parameter": "meta.tridion",
@@ -4618,7 +4618,7 @@ var sites_arr = [
     "open_beta_date": 1364774400,
     "closed_beta_date": 1363651200,
     "twitter_account": "StackReverseEng",
-    "favicon_url": "//cdn.sstatic.net/Sites/reverseengineering/img/favicon.ico",
+    "favicon_url": "reverseengineering/img/favicon.ico",
     "audience": "researchers and developers who explore the principles of a system through analysis of its structure, function, and operation",
     "site_url": "http://reverseengineering.stackexchange.com",
     "api_site_parameter": "reverseengineering",
@@ -4640,7 +4640,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/reverseengineeringmeta/img/favicon.ico",
+    "favicon_url": "reverseengineeringmeta/img/favicon.ico",
     "audience": "researchers and developers who explore the principles of a system through analysis of its structure, function, and operation",
     "site_url": "http://meta.reverseengineering.stackexchange.com",
     "api_site_parameter": "meta.reverseengineering",
@@ -4665,7 +4665,7 @@ var sites_arr = [
     "open_beta_date": 1368576000,
     "closed_beta_date": 1367884800,
     "twitter_account": "StackNetworkEng",
-    "favicon_url": "//cdn.sstatic.net/Sites/networkengineering/img/favicon.ico",
+    "favicon_url": "networkengineering/img/favicon.ico",
     "audience": "network engineers",
     "site_url": "http://networkengineering.stackexchange.com",
     "api_site_parameter": "networkengineering",
@@ -4687,7 +4687,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/networkengineeringmeta/img/favicon.ico",
+    "favicon_url": "networkengineeringmeta/img/favicon.ico",
     "audience": "network engineers",
     "site_url": "http://meta.networkengineering.stackexchange.com",
     "api_site_parameter": "meta.networkengineering",
@@ -4712,7 +4712,7 @@ var sites_arr = [
     "open_beta_date": 1369094400,
     "closed_beta_date": 1367971200,
     "twitter_account": "StackOpenData",
-    "favicon_url": "//cdn.sstatic.net/Sites/opendata/img/favicon.ico",
+    "favicon_url": "opendata/img/favicon.ico",
     "audience": "developers and researchers interested in open data",
     "site_url": "http://opendata.stackexchange.com",
     "api_site_parameter": "opendata",
@@ -4734,7 +4734,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/opendatameta/img/favicon.ico",
+    "favicon_url": "opendatameta/img/favicon.ico",
     "audience": "developers and researchers interested in open data",
     "site_url": "http://meta.opendata.stackexchange.com",
     "api_site_parameter": "meta.opendata",
@@ -4759,7 +4759,7 @@ var sites_arr = [
     "open_beta_date": 1370304000,
     "closed_beta_date": 1369094400,
     "twitter_account": "StackFreelance",
-    "favicon_url": "//cdn.sstatic.net/Sites/freelancing/img/favicon.ico",
+    "favicon_url": "freelancing/img/favicon.ico",
     "audience": " self-employed and freelance workers",
     "site_url": "http://freelancing.stackexchange.com",
     "api_site_parameter": "freelancing",
@@ -4781,7 +4781,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/freelancingmeta/img/favicon.ico",
+    "favicon_url": "freelancingmeta/img/favicon.ico",
     "audience": " self-employed and freelance workers",
     "site_url": "http://meta.freelancing.stackexchange.com",
     "api_site_parameter": "meta.freelancing",
@@ -4806,7 +4806,7 @@ var sites_arr = [
     "open_beta_date": 1369785600,
     "closed_beta_date": 1369180800,
     "twitter_account": "StackBlender",
-    "favicon_url": "//cdn.sstatic.net/Sites/blender/img/favicon.ico",
+    "favicon_url": "blender/img/favicon.ico",
     "audience": "people who use Blender to create 3D graphics, animations, or games",
     "site_url": "http://blender.stackexchange.com",
     "api_site_parameter": "blender",
@@ -4828,7 +4828,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/blendermeta/img/favicon.ico",
+    "favicon_url": "blendermeta/img/favicon.ico",
     "audience": "people who use Blender to create 3D graphics, animations, or games",
     "site_url": "http://meta.blender.stackexchange.com",
     "api_site_parameter": "meta.blender",
@@ -4852,7 +4852,7 @@ var sites_arr = [
     ],
     "launch_date": 1254154260,
     "high_resolution_icon_url": "mathoverflow/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/mathoverflow/img/favicon.ico",
+    "favicon_url": "mathoverflow/img/favicon.ico",
     "audience": "professional mathematicians",
     "site_url": "http://mathoverflow.net",
     "api_site_parameter": "mathoverflow.net",
@@ -4875,7 +4875,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "mathoverflowmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/mathoverflowmeta/img/favicon.ico",
+    "favicon_url": "mathoverflowmeta/img/favicon.ico",
     "audience": "professional mathematicians",
     "site_url": "http://meta.mathoverflow.net",
     "api_site_parameter": "meta.mathoverflow.net",
@@ -4900,7 +4900,7 @@ var sites_arr = [
     "open_beta_date": 1374451200,
     "closed_beta_date": 1373932800,
     "twitter_account": "StackSpaceExp",
-    "favicon_url": "//cdn.sstatic.net/Sites/space/img/favicon.ico",
+    "favicon_url": "space/img/favicon.ico",
     "audience": "spacecraft operators, scientists, engineers, and enthusiasts",
     "site_url": "http://space.stackexchange.com",
     "api_site_parameter": "space",
@@ -4922,7 +4922,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/spacemeta/img/favicon.ico",
+    "favicon_url": "spacemeta/img/favicon.ico",
     "audience": "spacecraft operators, scientists, engineers, and enthusiasts",
     "site_url": "http://meta.space.stackexchange.com",
     "api_site_parameter": "meta.space",
@@ -4945,7 +4945,7 @@ var sites_arr = [
       }
     ],
     "launch_date": 1289347200,
-    "favicon_url": "//cdn.sstatic.net/Sites/sound/img/favicon.ico",
+    "favicon_url": "sound/img/favicon.ico",
     "audience": "sound engineers, producers, editors, and enthusiasts",
     "site_url": "http://sound.stackexchange.com",
     "api_site_parameter": "sound",
@@ -4967,7 +4967,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/soundmeta/img/favicon.ico",
+    "favicon_url": "soundmeta/img/favicon.ico",
     "audience": "sound designers",
     "site_url": "http://meta.sound.stackexchange.com",
     "api_site_parameter": "meta.sound",
@@ -4992,7 +4992,7 @@ var sites_arr = [
     "open_beta_date": 1381190400,
     "closed_beta_date": 1379980800,
     "twitter_account": "StackAstronomy",
-    "favicon_url": "//cdn.sstatic.net/Sites/astronomy/img/favicon.ico",
+    "favicon_url": "astronomy/img/favicon.ico",
     "audience": "astronomers and astrophysicists",
     "site_url": "http://astronomy.stackexchange.com",
     "api_site_parameter": "astronomy",
@@ -5014,7 +5014,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/astronomymeta/img/favicon.ico",
+    "favicon_url": "astronomymeta/img/favicon.ico",
     "audience": "astronomers and astrophysicists",
     "site_url": "http://meta.astronomy.stackexchange.com",
     "api_site_parameter": "meta.astronomy",
@@ -5039,7 +5039,7 @@ var sites_arr = [
     "open_beta_date": 1380585600,
     "closed_beta_date": 1380067200,
     "twitter_account": "StackTor",
-    "favicon_url": "//cdn.sstatic.net/Sites/tor/img/favicon.ico",
+    "favicon_url": "tor/img/favicon.ico",
     "audience": "researchers, developers, and users of Tor",
     "site_url": "http://tor.stackexchange.com",
     "api_site_parameter": "tor",
@@ -5061,7 +5061,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/tormeta/img/favicon.ico",
+    "favicon_url": "tormeta/img/favicon.ico",
     "audience": "researchers, developers, and users of Tor",
     "site_url": "http://meta.tor.stackexchange.com",
     "api_site_parameter": "meta.tor",
@@ -5086,7 +5086,7 @@ var sites_arr = [
     "open_beta_date": 1382400000,
     "closed_beta_date": 1381190400,
     "twitter_account": "StackPets",
-    "favicon_url": "//cdn.sstatic.net/Sites/pets/img/favicon.ico",
+    "favicon_url": "pets/img/favicon.ico",
     "audience": "pet owners, caretakers, breeders, veterinarians, and trainers",
     "site_url": "http://pets.stackexchange.com",
     "api_site_parameter": "pets",
@@ -5108,7 +5108,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/petsmeta/img/favicon.ico",
+    "favicon_url": "petsmeta/img/favicon.ico",
     "audience": "pet owners, caretakers, breeders, veterinarians, and trainers",
     "site_url": "http://meta.pets.stackexchange.com",
     "api_site_parameter": "meta.pets",
@@ -5133,7 +5133,7 @@ var sites_arr = [
     "open_beta_date": 1383004800,
     "closed_beta_date": 1382400000,
     "twitter_account": "StackHam",
-    "favicon_url": "//cdn.sstatic.net/Sites/ham/img/favicon.ico",
+    "favicon_url": "ham/img/favicon.ico",
     "audience": "amateur radio enthusiasts",
     "site_url": "http://ham.stackexchange.com",
     "api_site_parameter": "ham",
@@ -5155,7 +5155,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/hammeta/img/favicon.ico",
+    "favicon_url": "hammeta/img/favicon.ico",
     "audience": "amateur radio enthusiasts",
     "site_url": "http://meta.ham.stackexchange.com",
     "api_site_parameter": "meta.ham",
@@ -5180,7 +5180,7 @@ var sites_arr = [
     "open_beta_date": 1384732800,
     "closed_beta_date": 1383609600,
     "twitter_account": "StackItalian",
-    "favicon_url": "//cdn.sstatic.net/Sites/italian/img/favicon.ico",
+    "favicon_url": "italian/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Italian language",
     "site_url": "http://italian.stackexchange.com",
     "api_site_parameter": "italian",
@@ -5202,7 +5202,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/italianmeta/img/favicon.ico",
+    "favicon_url": "italianmeta/img/favicon.ico",
     "audience": "students, teachers, and linguists wanting to discuss the finer points of the Italian language",
     "site_url": "http://meta.italian.stackexchange.com",
     "api_site_parameter": "meta.italian",
@@ -5227,7 +5227,7 @@ var sites_arr = [
     "open_beta_date": 1390953600,
     "closed_beta_date": 1386806400,
     "twitter_account": "StackOverflowPT",
-    "favicon_url": "//cdn.sstatic.net/Sites/br/img/favicon.ico",
+    "favicon_url": "br/img/favicon.ico",
     "audience": "programadores profissionais e entusiastas",
     "site_url": "http://pt.stackoverflow.com",
     "api_site_parameter": "pt.stackoverflow",
@@ -5249,7 +5249,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/brmeta/img/favicon.ico",
+    "favicon_url": "brmeta/img/favicon.ico",
     "audience": "professional and enthusiast programmers",
     "site_url": "http://meta.pt.stackoverflow.com",
     "api_site_parameter": "meta.pt.stackoverflow",
@@ -5274,7 +5274,7 @@ var sites_arr = [
     "open_beta_date": 1387843200,
     "closed_beta_date": 1387238400,
     "twitter_account": "StackAviation",
-    "favicon_url": "//cdn.sstatic.net/Sites/aviation/img/favicon.ico",
+    "favicon_url": "aviation/img/favicon.ico",
     "audience": "aircraft pilots, mechanics, and enthusiasts",
     "site_url": "http://aviation.stackexchange.com",
     "api_site_parameter": "aviation",
@@ -5296,7 +5296,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/aviationmeta/img/favicon.ico",
+    "favicon_url": "aviationmeta/img/favicon.ico",
     "audience": "aircraft pilots, mechanics, and enthusiasts",
     "site_url": "http://meta.aviation.stackexchange.com",
     "api_site_parameter": "meta.aviation",
@@ -5321,7 +5321,7 @@ var sites_arr = [
     "open_beta_date": 1387843200,
     "closed_beta_date": 1387324800,
     "twitter_account": "StackEbooks",
-    "favicon_url": "//cdn.sstatic.net/Sites/ebooks/img/favicon.ico",
+    "favicon_url": "ebooks/img/favicon.ico",
     "audience": "ebook publishers and readers",
     "site_url": "http://ebooks.stackexchange.com",
     "api_site_parameter": "ebooks",
@@ -5343,7 +5343,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/ebooksmeta/img/favicon.ico",
+    "favicon_url": "ebooksmeta/img/favicon.ico",
     "audience": "ebook publishers and readers",
     "site_url": "http://meta.ebooks.stackexchange.com",
     "api_site_parameter": "meta.ebooks",
@@ -5368,7 +5368,7 @@ var sites_arr = [
     "open_beta_date": 1390867200,
     "closed_beta_date": 1390262400,
     "twitter_account": "BeerStack",
-    "favicon_url": "//cdn.sstatic.net/Sites/beer/img/favicon.ico",
+    "favicon_url": "beer/img/favicon.ico",
     "audience": "beer aficionados and collectors",
     "site_url": "http://beer.stackexchange.com",
     "api_site_parameter": "beer",
@@ -5390,7 +5390,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/beermeta/img/favicon.ico",
+    "favicon_url": "beermeta/img/favicon.ico",
     "audience": "beer aficionados and collectors",
     "site_url": "http://meta.beer.stackexchange.com",
     "api_site_parameter": "meta.beer",
@@ -5415,7 +5415,7 @@ var sites_arr = [
     "open_beta_date": 1392681600,
     "closed_beta_date": 1391472000,
     "twitter_account": "StackSoftRecs",
-    "favicon_url": "//cdn.sstatic.net/Sites/softwarerecs/img/favicon.ico",
+    "favicon_url": "softwarerecs/img/favicon.ico",
     "audience": "people seeking specific software recommendations",
     "site_url": "http://softwarerecs.stackexchange.com",
     "api_site_parameter": "softwarerecs",
@@ -5437,7 +5437,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/softwarerecsmeta/img/favicon.ico",
+    "favicon_url": "softwarerecsmeta/img/favicon.ico",
     "audience": "people seeking specific software recommendations",
     "site_url": "http://meta.softwarerecs.stackexchange.com",
     "api_site_parameter": "meta.softwarerecs",
@@ -5462,7 +5462,7 @@ var sites_arr = [
     "open_beta_date": 1393372800,
     "closed_beta_date": 1392076800,
     "twitter_account": "StackArduino",
-    "favicon_url": "//cdn.sstatic.net/Sites/arduino/img/favicon.ico",
+    "favicon_url": "arduino/img/favicon.ico",
     "audience": "developers of open-source hardware and software that is compatible with Arduino",
     "site_url": "http://arduino.stackexchange.com",
     "api_site_parameter": "arduino",
@@ -5484,7 +5484,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/arduinometa/img/favicon.ico",
+    "favicon_url": "arduinometa/img/favicon.ico",
     "audience": "developers of open-source hardware and software that is compatible with Arduino",
     "site_url": "http://meta.arduino.stackexchange.com",
     "api_site_parameter": "meta.arduino",
@@ -5506,7 +5506,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/cs50/img/favicon.ico",
+    "favicon_url": "cs50/img/favicon.ico",
     "audience": "students of Harvard University&#39;s CS50",
     "site_url": "http://cs50.stackexchange.com",
     "api_site_parameter": "cs50",
@@ -5528,7 +5528,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/cs50meta/img/favicon.ico",
+    "favicon_url": "cs50meta/img/favicon.ico",
     "audience": "students of Harvard University&#39;s CS50",
     "site_url": "http://meta.cs50.stackexchange.com",
     "api_site_parameter": "meta.cs50",
@@ -5550,7 +5550,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/edx-cs169-1x/img/favicon.ico",
+    "favicon_url": "edx-cs169-1x/img/favicon.ico",
     "audience": "students of BerkeleyX CS169.1x: Engineering Software as a Service",
     "site_url": "http://edx-cs169-1x.stackexchange.com",
     "api_site_parameter": "edx-cs169-1x",
@@ -5572,7 +5572,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/edx-cs169-1xmeta/img/favicon.ico",
+    "favicon_url": "edx-cs169-1xmeta/img/favicon.ico",
     "audience": "students of BerkeleyX CS169.1x: Engineering Software as a Service",
     "site_url": "http://meta.edx-cs169-1x.stackexchange.com",
     "api_site_parameter": "meta.edx-cs169-1x",
@@ -5596,7 +5596,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1395100800,
     "closed_beta_date": 1394582400,
-    "favicon_url": "//cdn.sstatic.net/Sites/expatriates/img/favicon.ico",
+    "favicon_url": "expatriates/img/favicon.ico",
     "audience": "people living abroad on a long-term basis",
     "site_url": "http://expatriates.stackexchange.com",
     "api_site_parameter": "expatriates",
@@ -5618,7 +5618,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/expatriatesmeta/img/favicon.ico",
+    "favicon_url": "expatriatesmeta/img/favicon.ico",
     "audience": "people living abroad on a long-term basis",
     "site_url": "http://meta.expatriates.stackexchange.com",
     "api_site_parameter": "meta.expatriates",
@@ -5642,7 +5642,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1395705600,
     "closed_beta_date": 1394668800,
-    "favicon_url": "//cdn.sstatic.net/Sites/matheducators/img/favicon.ico",
+    "favicon_url": "matheducators/img/favicon.ico",
     "audience": "those involved in the field of teaching mathematics",
     "site_url": "http://matheducators.stackexchange.com",
     "api_site_parameter": "matheducators",
@@ -5664,7 +5664,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/matheducatorsmeta/img/favicon.ico",
+    "favicon_url": "matheducatorsmeta/img/favicon.ico",
     "audience": "those involved in the field of teaching mathematics",
     "site_url": "http://meta.matheducators.stackexchange.com",
     "api_site_parameter": "meta.matheducators",
@@ -5687,7 +5687,7 @@ var sites_arr = [
       }
     ],
     "high_resolution_icon_url": "stackoverflowmeta/img/apple-touch-icon@2.png",
-    "favicon_url": "//cdn.sstatic.net/Sites/stackoverflowmeta/img/favicon.ico",
+    "favicon_url": "stackoverflowmeta/img/favicon.ico",
     "audience": "professional and enthusiast programmers",
     "site_url": "http://meta.stackoverflow.com",
     "api_site_parameter": "meta.stackoverflow",
@@ -5711,7 +5711,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1398124800,
     "closed_beta_date": 1397520000,
-    "favicon_url": "//cdn.sstatic.net/Sites/earthscience/img/favicon.ico",
+    "favicon_url": "earthscience/img/favicon.ico",
     "audience": "those interested in the geology, meteorology, oceanography, and environmental sciences",
     "site_url": "http://earthscience.stackexchange.com",
     "api_site_parameter": "earthscience",
@@ -5733,7 +5733,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/earthsciencemeta/img/favicon.ico",
+    "favicon_url": "earthsciencemeta/img/favicon.ico",
     "audience": "those interested in the geology, meteorology, oceanography, and environmental sciences",
     "site_url": "http://meta.earthscience.stackexchange.com",
     "api_site_parameter": "meta.earthscience",
@@ -5757,7 +5757,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1398729600,
     "closed_beta_date": 1398124800,
-    "favicon_url": "//cdn.sstatic.net/Sites/joomla/img/favicon.ico",
+    "favicon_url": "joomla/img/favicon.ico",
     "audience": "Joomla! administrators, users, developers and designers",
     "site_url": "http://joomla.stackexchange.com",
     "api_site_parameter": "joomla",
@@ -5779,7 +5779,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/joomlameta/img/favicon.ico",
+    "favicon_url": "joomlameta/img/favicon.ico",
     "audience": "Joomla! administrators, users, developers and designers",
     "site_url": "http://meta.joomla.stackexchange.com",
     "api_site_parameter": "meta.joomla",
@@ -5803,7 +5803,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1402272000,
     "closed_beta_date": 1399939200,
-    "favicon_url": "//cdn.sstatic.net/Sites/datascience/img/favicon.ico",
+    "favicon_url": "datascience/img/favicon.ico",
     "audience": "Data science professionals, Machine Learning specialists, and those interested in learning more about the field",
     "site_url": "http://datascience.stackexchange.com",
     "api_site_parameter": "datascience",
@@ -5825,7 +5825,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/datasciencemeta/img/favicon.ico",
+    "favicon_url": "datasciencemeta/img/favicon.ico",
     "audience": "Data science professionals, Machine Learning specialists, and those interested in learning more about the field",
     "site_url": "http://meta.datascience.stackexchange.com",
     "api_site_parameter": "meta.datascience",
@@ -5849,7 +5849,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1401148800,
     "closed_beta_date": 1400025600,
-    "favicon_url": "//cdn.sstatic.net/Sites/puzzling/img/favicon.ico",
+    "favicon_url": "puzzling/img/favicon.ico",
     "audience": "those who study the creation and solving of puzzles",
     "site_url": "http://puzzling.stackexchange.com",
     "api_site_parameter": "puzzling",
@@ -5871,7 +5871,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/puzzlingmeta/img/favicon.ico",
+    "favicon_url": "puzzlingmeta/img/favicon.ico",
     "audience": "those who study the creation and solving of puzzles",
     "site_url": "http://meta.puzzling.stackexchange.com",
     "api_site_parameter": "meta.puzzling",
@@ -5895,7 +5895,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1403049600,
     "closed_beta_date": 1402444800,
-    "favicon_url": "//cdn.sstatic.net/Sites/craftcms/img/favicon.ico",
+    "favicon_url": "craftcms/img/favicon.ico",
     "audience": "administrators, end users, developers and designers for Craft CMS",
     "site_url": "http://craftcms.stackexchange.com",
     "api_site_parameter": "craftcms",
@@ -5917,7 +5917,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/craftcmsmeta/img/favicon.ico",
+    "favicon_url": "craftcmsmeta/img/favicon.ico",
     "audience": "administrators, end users, developers and designers for Craft CMS",
     "site_url": "http://meta.craftcms.stackexchange.com",
     "api_site_parameter": "meta.craftcms",
@@ -5941,7 +5941,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1403568000,
     "closed_beta_date": 1402963200,
-    "favicon_url": "//cdn.sstatic.net/Sites/buddhism/img/favicon.ico",
+    "favicon_url": "buddhism/img/favicon.ico",
     "audience": "people practicing or interested in Buddhist philosophy, teaching, and practice",
     "site_url": "http://buddhism.stackexchange.com",
     "api_site_parameter": "buddhism",
@@ -5963,7 +5963,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/buddhismmeta/img/favicon.ico",
+    "favicon_url": "buddhismmeta/img/favicon.ico",
     "audience": "people practicing or interested in Buddhist philosophy, teaching, and practice",
     "site_url": "http://meta.buddhism.stackexchange.com",
     "api_site_parameter": "meta.buddhism",
@@ -5987,7 +5987,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1404086400,
     "closed_beta_date": 1403049600,
-    "favicon_url": "//cdn.sstatic.net/Sites/hinduism/img/favicon.ico",
+    "favicon_url": "hinduism/img/favicon.ico",
     "audience": "followers of the Hindu religion and those interested in learning more about Hinduism",
     "site_url": "http://hinduism.stackexchange.com",
     "api_site_parameter": "hinduism",
@@ -6009,7 +6009,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/hinduismmeta/img/favicon.ico",
+    "favicon_url": "hinduismmeta/img/favicon.ico",
     "audience": "followers of the Hindu religion and those interested in learning more about Hinduism",
     "site_url": "http://meta.hinduism.stackexchange.com",
     "api_site_parameter": "meta.hinduism",
@@ -6033,7 +6033,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1407196800,
     "closed_beta_date": 1406592000,
-    "favicon_url": "//cdn.sstatic.net/Sites/moderators/img/favicon.ico",
+    "favicon_url": "moderators/img/favicon.ico",
     "audience": "community managers, administrators, and moderators",
     "site_url": "http://moderators.stackexchange.com",
     "api_site_parameter": "moderators",
@@ -6055,7 +6055,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/moderatorsmeta/img/favicon.ico",
+    "favicon_url": "moderatorsmeta/img/favicon.ico",
     "audience": "community managers, administrators, and moderators",
     "site_url": "http://meta.moderators.stackexchange.com",
     "api_site_parameter": "meta.moderators",
@@ -6079,7 +6079,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1408320000,
     "closed_beta_date": 1406678400,
-    "favicon_url": "//cdn.sstatic.net/Sites/startups/img/favicon.ico",
+    "favicon_url": "startups/img/favicon.ico",
     "audience": "entrepreneurs faced with delivering a new product or service under conditions of significant uncertainty",
     "site_url": "http://startups.stackexchange.com",
     "api_site_parameter": "startups",
@@ -6101,7 +6101,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/startupsmeta/img/favicon.ico",
+    "favicon_url": "startupsmeta/img/favicon.ico",
     "audience": "entrepreneurs faced with delivering a new product or service under conditions of significant uncertainty",
     "site_url": "http://meta.startups.stackexchange.com",
     "api_site_parameter": "meta.startups",
@@ -6125,7 +6125,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1411948800,
     "closed_beta_date": 1410825600,
-    "favicon_url": "//cdn.sstatic.net/Sites/worldbuilding/img/favicon.ico",
+    "favicon_url": "worldbuilding/img/favicon.ico",
     "audience": "writers/artists using science, geography and culture to construct imaginary worlds and settings",
     "site_url": "http://worldbuilding.stackexchange.com",
     "api_site_parameter": "worldbuilding",
@@ -6147,7 +6147,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/worldbuildingmeta/img/favicon.ico",
+    "favicon_url": "worldbuildingmeta/img/favicon.ico",
     "audience": "writers/artists using science, geography and culture to construct imaginary worlds and settings",
     "site_url": "http://meta.worldbuilding.stackexchange.com",
     "api_site_parameter": "meta.worldbuilding",
@@ -6171,7 +6171,7 @@ var sites_arr = [
     ],
     "open_beta_date": 1412640000,
     "closed_beta_date": 1411430400,
-    "favicon_url": "//cdn.sstatic.net/Sites/emacs/img/favicon.ico",
+    "favicon_url": "emacs/img/favicon.ico",
     "audience": "for those using, extending or developing emacs",
     "site_url": "http://emacs.stackexchange.com",
     "api_site_parameter": "emacs",
@@ -6193,7 +6193,7 @@ var sites_arr = [
         "name": "Chat Stack Exchange"
       }
     ],
-    "favicon_url": "//cdn.sstatic.net/Sites/emacsmeta/img/favicon.ico",
+    "favicon_url": "emacsmeta/img/favicon.ico",
     "audience": "for those using, extending or developing emacs",
     "site_url": "http://meta.emacs.stackexchange.com",
     "api_site_parameter": "meta.emacs",
