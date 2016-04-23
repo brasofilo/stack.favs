@@ -406,8 +406,8 @@ $( function() {
                 option_html = '<option value="' + val.api_site_parameter + '"' 
                             + meta_api_param + meta_url_param 
                             + ' data-site-url="' + val.site_url + '"'
-                            + ' data-image="https://cdn.sstatic.net/' + val.favicon_url + '"'
-                            + ' data-imagecss="https://cdn.sstatic.net/' + val.favicon_url + '"' // for dd-dropdown
+                            + ' data-image="https://cdn.sstatic.net/Sites/' + val.favicon_url + '"'
+                            + ' data-imagecss="https://cdn.sstatic.net/Sites/' + val.favicon_url + '"' // for dd-dropdown
                             + '>' + val.name + '</option>';
                 site_items.push( option_html );
             }
